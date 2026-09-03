@@ -1,0 +1,106 @@
+/* FluuexQR v97 - Mobile Header Only Fix
+   Scope: public website header only. Keeps all v96/v95 UI improvements untouched. */
+@media (max-width: 1024px){
+  body:not(.logged-in) .nav,
+  .nav{
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    min-height: 58px !important;
+    height: auto !important;
+    top: 10px !important;
+    left: 10px !important;
+    right: 10px !important;
+    padding: 8px 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+    overflow: hidden !important;
+    border-radius: 18px !important;
+  }
+
+  .nav .nav-links,
+  .nav .nav-actions,
+  .nav .nav-login,
+  .nav .nav-actions .btn{
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  .nav .nav-logo{
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    max-width: calc(100% - 58px) !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .nav .nav-logo img{
+    display: block !important;
+    width: auto !important;
+    max-width: min(190px, 100%) !important;
+    max-height: 46px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 12px !important;
+  }
+
+  .nav .hamburger{
+    display: inline-flex !important;
+    visibility: visible !important;
+    flex: 0 0 48px !important;
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+    padding: 0 !important;
+    margin-left: auto !important;
+    border-radius: 14px !important;
+    border: 1px solid rgba(255,255,255,.14) !important;
+    background: rgba(255,255,255,.08) !important;
+    position: relative !important;
+    z-index: 1002 !important;
+  }
+
+  .nav .hamburger span{
+    width: 22px !important;
+    height: 2px !important;
+    display: block !important;
+    background: #ffffff !important;
+    border-radius: 99px !important;
+  }
+
+  .mobile-nav{
+    top: 78px !important;
+    left: 10px !important;
+    right: 10px !important;
+    max-height: calc(100dvh - 92px) !important;
+    overflow-y: auto !important;
+    z-index: 1001 !important;
+  }
+}
+
+@media (max-width: 420px){
+  .nav{
+    min-height: 56px !important;
+    padding: 7px 9px !important;
+    border-radius: 17px !important;
+  }
+  .nav .nav-logo img{
+    max-width: min(160px, 100%) !important;
+    max-height: 42px !important;
+  }
+  .nav .hamburger{
+    flex-basis: 46px !important;
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+    min-height: 46px !important;
+  }
+}

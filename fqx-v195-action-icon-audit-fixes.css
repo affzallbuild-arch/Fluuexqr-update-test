@@ -1,0 +1,17 @@
+/* v195 action/icon/category reliability fixes - UI only */
+.fqx-v145-restaurant-admin a,.fqx-v145-restaurant-admin button,.fqx-v115-super a,.fqx-v115-super button{touch-action:manipulation}
+.fqx-v145-restaurant-admin svg,.fqx-v115-super svg,.fq-svg-icon{pointer-events:none!important;display:inline-block;vertical-align:middle;opacity:1!important;visibility:visible!important}
+.fqx-v145-restaurant-admin .fq-bill-actions a,.fqx-v145-restaurant-admin .fq-bill-actions button,
+.fqx-v145-restaurant-admin .fq-cat-actions a,.fqx-v145-restaurant-admin .fq-cat-actions button,
+.fqx-v145-restaurant-admin .inline-actions a,.fqx-v145-restaurant-admin .inline-actions button,
+.fqx-v115-super .fqx-actions-row a,.fqx-v115-super .fqx-actions-row button,
+.fqx-v115-super .inline-actions a,.fqx-v115-super .inline-actions button{min-width:40px;min-height:40px;display:inline-flex;align-items:center;justify-content:center;gap:7px;cursor:pointer;opacity:1!important;visibility:visible!important;pointer-events:auto!important}
+.fqx-v145-restaurant-admin a.is-loading,.fqx-v145-restaurant-admin button.is-loading,.fqx-v115-super a.is-loading,.fqx-v115-super button.is-loading{pointer-events:auto!important;opacity:1!important}
+.fqx-v195-saving{position:relative;filter:saturate(1.05)}
+.fqx-v195-saving::after{content:'';width:13px;height:13px;border:2px solid currentColor;border-top-color:transparent;border-radius:50%;margin-left:7px;animation:fqx-v195-spin .75s linear infinite}
+@keyframes fqx-v195-spin{to{transform:rotate(360deg)}}
+.fqx-v145-restaurant-admin select[name="category_type_id"] option[hidden]{display:none!important}
+@media(max-width:640px){
+  .fqx-v145-restaurant-admin .fq-bill-actions,.fqx-v145-restaurant-admin .fq-cat-actions,.fqx-v145-restaurant-admin .inline-actions,.fqx-v115-super .inline-actions,.fqx-v115-super .fqx-actions-row{display:flex!important;flex-wrap:wrap!important;gap:8px!important;width:100%!important}
+  .fqx-v145-restaurant-admin .fq-bill-actions a,.fqx-v145-restaurant-admin .fq-bill-actions button,.fqx-v145-restaurant-admin .fq-cat-actions a,.fqx-v145-restaurant-admin .fq-cat-actions button,.fqx-v115-super .fqx-actions-row a,.fqx-v115-super .fqx-actions-row button{min-width:44px;min-height:44px}
+}

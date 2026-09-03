@@ -1,0 +1,601 @@
+
+/* FluuexQR v188 Restaurant Admin visibility, responsive and performance-safe UI fix.
+   Scope: visual/contrast/responsive only. No workflow changes. */
+:root{
+  --fx-bg-dark:#07111f;
+  --fx-bg-card:#0f1b2d;
+  --fx-bg-card-2:#111f35;
+  --fx-bg-card-light:#ffffff;
+  --fx-text-light:#ffffff;
+  --fx-text-soft:#e5e7eb;
+  --fx-text-muted:#cbd5e1;
+  --fx-text-dark:#111827;
+  --fx-text-dark-2:#1f2937;
+  --fx-border-dark:rgba(255,255,255,0.12);
+  --fx-border-dark-2:rgba(249,115,22,0.28);
+  --fx-border-light:#e5e7eb;
+  --fx-primary:#f97316;
+  --fx-primary-hover:#ea580c;
+  --fx-success:#22c55e;
+  --fx-danger:#ef4444;
+  --fx-warning:#f59e0b;
+  --fx-info:#38bdf8;
+}
+
+/* Global Restaurant Admin contrast */
+.fqx-v145-restaurant-admin,
+.fqx-v145-restaurant-admin .app-shell.dashboard-shell,
+.fqx-v145-restaurant-admin .main-content,
+.fqx-v145-restaurant-admin .page-body{
+  background:radial-gradient(circle at 80% 10%,rgba(249,115,22,.08),transparent 26%),linear-gradient(135deg,#07111f,#081422 46%,#0b1626)!important;
+  color:var(--fx-text-light)!important;
+}
+.fqx-v145-restaurant-admin .sidebar,
+.fqx-v145-restaurant-admin .topbar,
+.fqx-v145-restaurant-admin .section-card,
+.fqx-v145-restaurant-admin .chart-card,
+.fqx-v145-restaurant-admin .card,
+.fqx-v145-restaurant-admin .fq-admin-card,
+.fqx-v145-restaurant-admin .fq-panel,
+.fqx-v145-restaurant-admin .fq-bills-card,
+.fqx-v145-restaurant-admin .fq-sub-card-v174,
+.fqx-v145-restaurant-admin .fq-sub-current-v174,
+.fqx-v145-restaurant-admin .fq-plan-card-v174,
+.fqx-v145-restaurant-admin .fq-side-card-v174{
+  background:linear-gradient(180deg,rgba(15,27,45,.96),rgba(8,18,31,.98))!important;
+  color:var(--fx-text-light)!important;
+  border-color:var(--fx-border-dark)!important;
+  box-shadow:0 18px 48px rgba(0,0,0,.25)!important;
+}
+.fqx-v145-restaurant-admin h1,
+.fqx-v145-restaurant-admin h2,
+.fqx-v145-restaurant-admin h3,
+.fqx-v145-restaurant-admin h4,
+.fqx-v145-restaurant-admin h5,
+.fqx-v145-restaurant-admin h6,
+.fqx-v145-restaurant-admin .page-title,
+.fqx-v145-restaurant-admin .page-header-left h2,
+.fqx-v145-restaurant-admin .chart-title,
+.fqx-v145-restaurant-admin .section-title,
+.fqx-v145-restaurant-admin .card-value,
+.fqx-v145-restaurant-admin .topbar-title,
+.fqx-v145-restaurant-admin .fq-title,
+.fqx-v145-restaurant-admin .fq-bills-titlebar h1,
+.fqx-v145-restaurant-admin .fq-bills-titlebar h2,
+.fqx-v145-restaurant-admin .fq-sub-titlebar-v174 h1,
+.fqx-v145-restaurant-admin strong,
+.fqx-v145-restaurant-admin b{
+  color:var(--fx-text-light)!important;
+}
+.fqx-v145-restaurant-admin p,
+.fqx-v145-restaurant-admin small,
+.fqx-v145-restaurant-admin .subtitle,
+.fqx-v145-restaurant-admin .page-header-left p,
+.fqx-v145-restaurant-admin .card-sub,
+.fqx-v145-restaurant-admin .card-title,
+.fqx-v145-restaurant-admin .text-muted,
+.fqx-v145-restaurant-admin .form-label,
+.fqx-v145-restaurant-admin label,
+.fqx-v145-restaurant-admin .fq-muted,
+.fqx-v145-restaurant-admin .fq-plan-card-v174>p,
+.fqx-v145-restaurant-admin .fq-plan-price small{
+  color:var(--fx-text-muted)!important;
+}
+
+/* Light areas must stay readable */
+.fqx-v145-restaurant-admin .fq-light,
+.fqx-v145-restaurant-admin .fq-printable-bill,
+.fqx-v145-restaurant-admin .fq-bill-print-area,
+.fqx-v145-restaurant-admin .bill-paper,
+.fqx-v145-restaurant-admin .bill-preview-paper,
+.fqx-v145-restaurant-admin .invoice-paper,
+.fqx-v145-restaurant-admin .receipt-paper,
+.fqx-v145-restaurant-admin .thermal-paper,
+.fqx-v145-restaurant-admin .fq-live-bill-preview .paper,
+.fqx-v145-restaurant-admin .fq-bill-branding-page .fq-live-bill-preview,
+.fqx-v145-restaurant-admin .fq-sample-bill-paper{
+  background:#fff!important;
+  color:var(--fx-text-dark)!important;
+}
+.fqx-v145-restaurant-admin .fq-light *,
+.fqx-v145-restaurant-admin .fq-printable-bill *,
+.fqx-v145-restaurant-admin .fq-bill-print-area *,
+.fqx-v145-restaurant-admin .bill-paper *,
+.fqx-v145-restaurant-admin .bill-preview-paper *,
+.fqx-v145-restaurant-admin .invoice-paper *,
+.fqx-v145-restaurant-admin .receipt-paper *,
+.fqx-v145-restaurant-admin .thermal-paper *,
+.fqx-v145-restaurant-admin .fq-live-bill-preview .paper *,
+.fqx-v145-restaurant-admin .fq-sample-bill-paper *{
+  color:var(--fx-text-dark)!important;
+}
+
+/* Forms / filters */
+.fqx-v145-restaurant-admin input:not([type=checkbox]):not([type=radio]):not([type=color]),
+.fqx-v145-restaurant-admin select,
+.fqx-v145-restaurant-admin textarea,
+.fqx-v145-restaurant-admin .form-input,
+.fqx-v145-restaurant-admin .form-select,
+.fqx-v145-restaurant-admin .form-textarea,
+.fqx-v145-restaurant-admin .fq-filter-input,
+.fqx-v145-restaurant-admin .fq-filter-select{
+  background:rgba(8,18,31,.96)!important;
+  color:var(--fx-text-light)!important;
+  border:1px solid rgba(255,255,255,.16)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04)!important;
+}
+.fqx-v145-restaurant-admin input::placeholder,
+.fqx-v145-restaurant-admin textarea::placeholder{
+  color:#94a3b8!important;
+  opacity:1!important;
+}
+.fqx-v145-restaurant-admin input:focus,
+.fqx-v145-restaurant-admin select:focus,
+.fqx-v145-restaurant-admin textarea:focus{
+  border-color:rgba(249,115,22,.72)!important;
+  box-shadow:0 0 0 3px rgba(249,115,22,.16)!important;
+  outline:none!important;
+}
+.fqx-v145-restaurant-admin option{background:#0f1b2d!important;color:#fff!important}
+
+/* Sidebar visibility */
+.fqx-v145-restaurant-admin .sidebar .nav-item,
+.fqx-v145-restaurant-admin .sidebar a,
+.fqx-v145-restaurant-admin .sidebar .sidebar-role,
+.fqx-v145-restaurant-admin .sidebar .sidebar-rest{
+  color:rgba(255,255,255,.88)!important;
+}
+.fqx-v145-restaurant-admin .sidebar .nav-item.active{
+  color:#fff!important;
+  background:linear-gradient(90deg,rgba(249,115,22,.64),rgba(249,115,22,.2))!important;
+  border-color:var(--fx-primary)!important;
+}
+.fqx-v145-restaurant-admin .sidebar .nav-item:hover{
+  color:#fff!important;
+  background:rgba(249,115,22,.14)!important;
+}
+
+/* Bill page hardfix: remove white table/card conflicts */
+.fqx-v145-restaurant-admin .fq-bills-exact-v165,
+.fqx-v145-restaurant-admin .fq-bills-reference-final,
+.fqx-v145-restaurant-admin .fq-bills-page,
+.fqx-v145-restaurant-admin .fq-bills-layout{
+  color:var(--fx-text-light)!important;
+}
+.fqx-v145-restaurant-admin .fq-bills-exact-v165 .fq-bills-table-card,
+.fqx-v145-restaurant-admin .fq-bills-reference-final .fq-bills-table-wrap,
+.fqx-v145-restaurant-admin .fq-bills-page .fq-bills-table-wrap,
+.fqx-v145-restaurant-admin .fq-bills-table-card,
+.fqx-v145-restaurant-admin .fq-bills-table-wrap,
+.fqx-v145-restaurant-admin .table-wrap:has(.fq-bills-table),
+.fqx-v145-restaurant-admin .table-scroll:has(.fq-bills-table){
+  background:linear-gradient(180deg,rgba(15,27,45,.98),rgba(7,17,31,.99))!important;
+  color:var(--fx-text-light)!important;
+  border:1px solid rgba(249,115,22,.22)!important;
+  border-radius:18px!important;
+  box-shadow:0 18px 44px rgba(0,0,0,.28)!important;
+}
+.fqx-v145-restaurant-admin .fq-bills-table,
+.fqx-v145-restaurant-admin table.fq-bills-table,
+.fqx-v145-restaurant-admin .fq-bills-table thead,
+.fqx-v145-restaurant-admin .fq-bills-table tbody,
+.fqx-v145-restaurant-admin .fq-bills-table tr,
+.fqx-v145-restaurant-admin .fq-bills-table th,
+.fqx-v145-restaurant-admin .fq-bills-table td,
+.fqx-v145-restaurant-admin .fq-bills-table tbody td,
+.fqx-v145-restaurant-admin .fq-bills-table thead th{
+  background:transparent!important;
+  color:var(--fx-text-light)!important;
+}
+.fqx-v145-restaurant-admin .fq-bills-table thead th{
+  background:rgba(255,255,255,.045)!important;
+  color:#dbeafe!important;
+  border-bottom:1px solid rgba(255,255,255,.12)!important;
+  font-weight:800!important;
+}
+.fqx-v145-restaurant-admin .fq-bills-table tbody tr{
+  border-bottom:1px solid rgba(255,255,255,.08)!important;
+}
+.fqx-v145-restaurant-admin .fq-bills-table tbody tr:hover{
+  background:rgba(249,115,22,.10)!important;
+}
+.fqx-v145-restaurant-admin .fq-bills-table td,
+.fqx-v145-restaurant-admin .fq-bills-table td *,
+.fqx-v145-restaurant-admin .fq-bills-table th *{
+  color:inherit!important;
+}
+.fqx-v145-restaurant-admin .fq-bills-table .text-muted,
+.fqx-v145-restaurant-admin .fq-bills-table small,
+.fqx-v145-restaurant-admin .fq-bills-table .muted{
+  color:#b6c4d4!important;
+}
+.fqx-v145-restaurant-admin .fq-customer-cell strong{color:#fff!important}
+.fqx-v145-restaurant-admin .fq-customer-cell span{color:#cbd5e1!important}
+
+/* Cards & filter bar on bills */
+.fqx-v145-restaurant-admin .fq-bill-stat-card,
+.fqx-v145-restaurant-admin .fq-bills-filter-bar,
+.fqx-v145-restaurant-admin .fq-bills-right-panel > *,
+.fqx-v145-restaurant-admin .fq-quick-actions-card,
+.fqx-v145-restaurant-admin .fq-help-card,
+.fqx-v145-restaurant-admin .fq-sample-bill-preview{
+  background:linear-gradient(180deg,rgba(15,27,45,.98),rgba(8,18,31,.98))!important;
+  color:var(--fx-text-light)!important;
+  border:1px solid rgba(249,115,22,.18)!important;
+}
+.fqx-v145-restaurant-admin .fq-bill-stat-card *,
+.fqx-v145-restaurant-admin .fq-bills-filter-bar *,
+.fqx-v145-restaurant-admin .fq-bills-right-panel *{
+  color:inherit;
+}
+
+/* Badges contrast */
+.fqx-v145-restaurant-admin .badge,
+.fqx-v145-restaurant-admin [class*="badge"],
+.fqx-v145-restaurant-admin .fq-bill-status-badge,
+.fqx-v145-restaurant-admin .fq-bill-type-badge{
+  font-weight:800!important;
+  border:1px solid transparent!important;
+}
+.fqx-v145-restaurant-admin .badge-paid,
+.fqx-v145-restaurant-admin .fq-status-paid,
+.fqx-v145-restaurant-admin .fq-bill-status-paid,
+.fqx-v145-restaurant-admin .fq-bill-status-badge.paid{
+  background:rgba(34,197,94,.18)!important;color:#86efac!important;border-color:rgba(34,197,94,.35)!important;
+}
+.fqx-v145-restaurant-admin .badge-pending,
+.fqx-v145-restaurant-admin .fq-status-pending,
+.fqx-v145-restaurant-admin .fq-bill-status-pending,
+.fqx-v145-restaurant-admin .fq-bill-status-badge.pending{
+  background:rgba(245,158,11,.18)!important;color:#fcd34d!important;border-color:rgba(245,158,11,.35)!important;
+}
+.fqx-v145-restaurant-admin .badge-unpaid,
+.fqx-v145-restaurant-admin .fq-status-unpaid,
+.fqx-v145-restaurant-admin .fq-bill-status-unpaid,
+.fqx-v145-restaurant-admin .fq-bill-status-badge.unpaid{
+  background:rgba(239,68,68,.18)!important;color:#fca5a5!important;border-color:rgba(239,68,68,.35)!important;
+}
+
+/* Icon buttons */
+.fqx-v145-restaurant-admin .fq-bill-actions,
+.fqx-v145-restaurant-admin .fq-action-icons,
+.fqx-v145-restaurant-admin .inline-actions{
+  display:flex!important;
+  gap:7px!important;
+  flex-wrap:wrap!important;
+  align-items:center!important;
+}
+.fqx-v145-restaurant-admin .fq-bill-action-btn,
+.fqx-v145-restaurant-admin .fq-bill-actions a,
+.fqx-v145-restaurant-admin .fq-bill-actions button,
+.fqx-v145-restaurant-admin .fq-action-btn,
+.fqx-v145-restaurant-admin .icon-btn,
+.fqx-v145-restaurant-admin .btn-icon,
+.fqx-v145-restaurant-admin .fq-row-action,
+.fqx-v145-restaurant-admin td.actions a,
+.fqx-v145-restaurant-admin td.actions button{
+  min-width:36px!important;
+  width:36px!important;
+  height:36px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  border-radius:10px!important;
+  border:1px solid rgba(249,115,22,.35)!important;
+  background:rgba(249,115,22,.10)!important;
+  color:#ffb86b!important;
+  opacity:1!important;
+  font-size:15px!important;
+  line-height:1!important;
+  cursor:pointer!important;
+  transition:background .18s ease,border-color .18s ease,transform .18s ease!important;
+}
+.fqx-v145-restaurant-admin .fq-bill-actions a:hover,
+.fqx-v145-restaurant-admin .fq-bill-actions button:hover,
+.fqx-v145-restaurant-admin .fq-action-btn:hover,
+.fqx-v145-restaurant-admin .icon-btn:hover,
+.fqx-v145-restaurant-admin .btn-icon:hover,
+.fqx-v145-restaurant-admin .fq-row-action:hover,
+.fqx-v145-restaurant-admin td.actions a:hover,
+.fqx-v145-restaurant-admin td.actions button:hover{
+  background:rgba(249,115,22,.22)!important;
+  border-color:rgba(249,115,22,.75)!important;
+  color:#fff!important;
+  transform:translateY(-1px)!important;
+}
+.fqx-v145-restaurant-admin .fq-bill-actions .whatsapp,
+.fqx-v145-restaurant-admin .fq-bill-action-whatsapp,
+.fqx-v145-restaurant-admin a[href*="whatsapp"]{
+  color:#86efac!important;border-color:rgba(34,197,94,.45)!important;background:rgba(34,197,94,.10)!important;
+}
+.fqx-v145-restaurant-admin .fq-bill-actions .print,
+.fqx-v145-restaurant-admin .fq-bill-action-print{
+  color:#fde68a!important;border-color:rgba(245,158,11,.45)!important;background:rgba(245,158,11,.10)!important;
+}
+.fqx-v145-restaurant-admin .fq-bill-actions .pdf,
+.fqx-v145-restaurant-admin .fq-bill-action-pdf{
+  color:#fdba74!important;border-color:rgba(249,115,22,.45)!important;background:rgba(249,115,22,.10)!important;
+}
+.fqx-v145-restaurant-admin button[disabled],
+.fqx-v145-restaurant-admin a[aria-disabled="true"],
+.fqx-v145-restaurant-admin .is-disabled{
+  opacity:.58!important;
+  cursor:not-allowed!important;
+}
+
+/* Notices */
+.fqx-v145-restaurant-admin .notice,
+.fqx-v145-restaurant-admin .alert,
+.fqx-v145-restaurant-admin .fq-alert{
+  color:#fff!important;
+  border-radius:14px!important;
+  border:1px solid rgba(255,255,255,.14)!important;
+  padding:12px 16px!important;
+}
+.fqx-v145-restaurant-admin .notice-success,
+.fqx-v145-restaurant-admin .alert-success,
+.fqx-v145-restaurant-admin .fq-alert-success{background:rgba(34,197,94,.16)!important;color:#bbf7d0!important;border-color:rgba(34,197,94,.32)!important}
+.fqx-v145-restaurant-admin .notice-warning,
+.fqx-v145-restaurant-admin .alert-warning,
+.fqx-v145-restaurant-admin .fq-alert-warning{background:rgba(245,158,11,.16)!important;color:#fde68a!important;border-color:rgba(245,158,11,.32)!important}
+.fqx-v145-restaurant-admin .notice-error,
+.fqx-v145-restaurant-admin .alert-danger,
+.fqx-v145-restaurant-admin .fq-alert-danger{background:rgba(239,68,68,.16)!important;color:#fecaca!important;border-color:rgba(239,68,68,.32)!important}
+.fqx-v145-restaurant-admin .notice-info,
+.fqx-v145-restaurant-admin .alert-info,
+.fqx-v145-restaurant-admin .fq-alert-info{background:rgba(56,189,248,.16)!important;color:#bae6fd!important;border-color:rgba(56,189,248,.32)!important}
+
+/* Subscription readability */
+.fqx-v145-restaurant-admin .fq-subscription-page-v174 *,
+.fqx-v145-restaurant-admin .fq-subscription-page-v174{
+  color:var(--fx-text-light);
+}
+.fqx-v145-restaurant-admin .fq-subscription-page-v174 .muted,
+.fqx-v145-restaurant-admin .fq-subscription-page-v174 small,
+.fqx-v145-restaurant-admin .fq-subscription-page-v174 p{
+  color:var(--fx-text-muted)!important;
+}
+.fqx-v145-restaurant-admin .fq-plan-cards-v174{
+  align-items:stretch!important;
+}
+.fqx-v145-restaurant-admin .fq-plan-card-v174{
+  min-height:320px!important;
+}
+.fqx-v145-restaurant-admin .current-badge{
+  z-index:2!important;
+  color:#1f1304!important;
+}
+
+/* Responsive */
+@media (max-width:1200px){
+  .fqx-v145-restaurant-admin .fq-bills-main-grid,
+  .fqx-v145-restaurant-admin .fq-bills-exact-v165 .fq-bills-main-grid,
+  .fqx-v145-restaurant-admin .fq-bills-reference-final .fq-bills-main-grid{
+    grid-template-columns:1fr!important;
+  }
+  .fqx-v145-restaurant-admin .fq-bills-right-panel{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:14px!important;
+  }
+}
+@media (max-width:900px){
+  .fqx-v145-restaurant-admin .page-body{padding:14px!important}
+  .fqx-v145-restaurant-admin .stat-grid,
+  .fqx-v145-restaurant-admin .fq-bills-stats,
+  .fqx-v145-restaurant-admin .fq-sub-kpis-v174{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  .fqx-v145-restaurant-admin .fq-bills-filter-bar{
+    grid-template-columns:1fr!important;
+  }
+  .fqx-v145-restaurant-admin .fq-bills-right-panel{
+    grid-template-columns:1fr!important;
+  }
+  .fqx-v145-restaurant-admin .data-table,
+  .fqx-v145-restaurant-admin .fq-bills-table{
+    min-width:760px!important;
+  }
+  .fqx-v145-restaurant-admin .table-scroll{
+    overflow-x:auto!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+}
+@media (max-width:520px){
+  .fqx-v145-restaurant-admin .page-body{padding:12px 10px 22px!important}
+  .fqx-v145-restaurant-admin .stat-grid,
+  .fqx-v145-restaurant-admin .fq-bills-stats,
+  .fqx-v145-restaurant-admin .fq-sub-kpis-v174{
+    grid-template-columns:1fr!important;
+  }
+  .fqx-v145-restaurant-admin .topbar{
+    gap:8px!important;
+    min-height:60px!important;
+  }
+  .fqx-v145-restaurant-admin .topbar-search,
+  .fqx-v145-restaurant-admin .search-bar{
+    min-width:0!important;
+    width:100%!important;
+  }
+  .fqx-v145-restaurant-admin .fq-bill-action-btn,
+  .fqx-v145-restaurant-admin .fq-bill-actions a,
+  .fqx-v145-restaurant-admin .fq-bill-actions button,
+  .fqx-v145-restaurant-admin .fq-action-btn,
+  .fqx-v145-restaurant-admin .icon-btn,
+  .fqx-v145-restaurant-admin .btn-icon,
+  .fqx-v145-restaurant-admin .fq-row-action,
+  .fqx-v145-restaurant-admin td.actions a,
+  .fqx-v145-restaurant-admin td.actions button{
+    min-width:40px!important;width:40px!important;height:40px!important;
+  }
+  .fqx-v145-restaurant-admin .btn{
+    min-height:42px!important;
+  }
+}
+
+/* Performance UX */
+.fqx-v145-restaurant-admin .is-loading,
+.fqx-v145-restaurant-admin [data-fqx-loading="1"]{
+  pointer-events:none!important;
+  opacity:.7!important;
+}
+.fqx-v145-restaurant-admin .is-loading::after,
+.fqx-v145-restaurant-admin [data-fqx-loading="1"]::after{
+  content:"";
+  width:14px;height:14px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.35);
+  border-top-color:#fff;
+  display:inline-block;
+  margin-left:8px;
+  animation:fqx-spin-v188 .8s linear infinite;
+}
+@keyframes fqx-spin-v188{to{transform:rotate(360deg)}}
+
+/* v193: Category button visibility + full admin responsive hardfix (UI only) */
+.fqx-v145-restaurant-admin .fq-categories-page-v190,
+.fqx-v145-restaurant-admin .fq-categories-page-v190 *{box-sizing:border-box}
+.fqx-v145-restaurant-admin .fq-categories-page-v190{width:100%;max-width:100%;overflow:hidden;color:#fff!important}
+.fqx-v145-restaurant-admin .fq-cat-titlebar{display:flex!important;align-items:flex-start!important;justify-content:space-between!important;gap:16px!important;flex-wrap:wrap!important;margin-bottom:18px!important}
+.fqx-v145-restaurant-admin .fq-cat-titlebar h1,
+.fqx-v145-restaurant-admin .fq-cat-card h3,
+.fqx-v145-restaurant-admin .fq-cat-card h4,
+.fqx-v145-restaurant-admin .fq-cat-stat-card strong,
+.fqx-v145-restaurant-admin .fq-cat-type-chip strong,
+.fqx-v145-restaurant-admin .fq-cat-table td,
+.fqx-v145-restaurant-admin .fq-cat-table th{color:#ffffff!important}
+.fqx-v145-restaurant-admin .fq-cat-titlebar p,
+.fqx-v145-restaurant-admin .fq-cat-card p,
+.fqx-v145-restaurant-admin .fq-cat-card small,
+.fqx-v145-restaurant-admin .fq-cat-card em,
+.fqx-v145-restaurant-admin .fq-cat-help,
+.fqx-v145-restaurant-admin .fq-cat-type-chip small{color:#cbd5e1!important}
+.fqx-v145-restaurant-admin .fq-cat-card,
+.fqx-v145-restaurant-admin .fq-cat-stat-card,
+.fqx-v145-restaurant-admin .fq-cat-form-card,
+.fqx-v145-restaurant-admin .fq-cat-list-card,
+.fqx-v145-restaurant-admin .fq-cat-type-chip,
+.fqx-v145-restaurant-admin .fq-cat-empty,
+.fqx-v145-restaurant-admin .fq-cat-table-wrap{background:linear-gradient(180deg,rgba(15,27,45,.98),rgba(8,18,31,.99))!important;border:1px solid rgba(255,255,255,.12)!important;color:#fff!important;box-shadow:0 18px 46px rgba(0,0,0,.22)!important}
+.fqx-v145-restaurant-admin .fq-cat-form label{display:grid!important;gap:7px!important;color:#e5e7eb!important;font-weight:800!important}
+.fqx-v145-restaurant-admin .fq-cat-form input:not([type=checkbox]),
+.fqx-v145-restaurant-admin .fq-cat-form select,
+.fqx-v145-restaurant-admin .fq-cat-form textarea{width:100%!important;background:#ffffff!important;color:#111827!important;border:1px solid #e5e7eb!important;border-radius:12px!important;min-height:44px!important;padding:10px 12px!important}
+.fqx-v145-restaurant-admin .fq-cat-form input::placeholder,
+.fqx-v145-restaurant-admin .fq-cat-form textarea::placeholder{color:#64748b!important;opacity:1!important}
+.fqx-v145-restaurant-admin .fq-cat-form select option{background:#fff!important;color:#111827!important}
+.fqx-v145-restaurant-admin .fq-cat-check{display:flex!important;align-items:center!important;gap:10px!important;color:#fff!important;background:rgba(255,255,255,.06)!important;border:1px solid rgba(255,255,255,.12)!important;border-radius:12px!important;padding:10px 12px!important}
+.fqx-v145-restaurant-admin .fq-cat-save-btn,
+.fqx-v145-restaurant-admin button.fq-cat-save-btn,
+.fqx-v145-restaurant-admin .fq-cat-add-btn,
+.fqx-v145-restaurant-admin .fq-cat-empty a,
+.fqx-v145-restaurant-admin .fq-cat-card-head a,
+.fqx-v145-restaurant-admin .fq-cat-actions a,
+.fqx-v145-restaurant-admin .fq-cat-actions button{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;min-height:44px!important;padding:11px 18px!important;border-radius:14px!important;background:linear-gradient(135deg,#f97316,#ea580c)!important;color:#ffffff!important;border:1px solid rgba(255,255,255,.18)!important;font-weight:900!important;text-decoration:none!important;opacity:1!important;visibility:visible!important;box-shadow:0 12px 30px rgba(249,115,22,.24)!important;cursor:pointer!important}
+.fqx-v145-restaurant-admin .fq-cat-save-btn:hover,
+.fqx-v145-restaurant-admin .fq-cat-add-btn:hover,
+.fqx-v145-restaurant-admin .fq-cat-empty a:hover,
+.fqx-v145-restaurant-admin .fq-cat-card-head a:hover,
+.fqx-v145-restaurant-admin .fq-cat-actions a:hover,
+.fqx-v145-restaurant-admin .fq-cat-actions button:hover{background:linear-gradient(135deg,#fb923c,#f97316)!important;color:#fff!important;transform:translateY(-1px)!important}
+.fqx-v145-restaurant-admin .fq-cat-actions button[type=submit]{background:rgba(239,68,68,.15)!important;color:#fecaca!important;border-color:rgba(239,68,68,.35)!important;box-shadow:none!important}
+.fqx-v145-restaurant-admin .fq-cat-table{width:100%!important;border-collapse:separate!important;border-spacing:0!important;min-width:720px!important}
+.fqx-v145-restaurant-admin .fq-cat-table th{background:rgba(255,255,255,.07)!important;color:#dbeafe!important;font-weight:900!important;white-space:nowrap!important}
+.fqx-v145-restaurant-admin .fq-cat-table td{background:transparent!important;border-bottom:1px solid rgba(255,255,255,.08)!important;color:#f8fafc!important}
+.fqx-v145-restaurant-admin .fq-cat-table-wrap{overflow-x:auto!important;-webkit-overflow-scrolling:touch!important;border-radius:18px!important}
+.fqx-v145-restaurant-admin .fq-cat-layout{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:18px!important;align-items:start!important}
+.fqx-v145-restaurant-admin .fq-cat-list-card{grid-column:1 / -1!important}
+.fqx-v145-restaurant-admin .fq-cat-stats{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important;margin-bottom:18px!important}
+.fqx-v145-restaurant-admin .fq-cat-type-chips{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))!important;gap:10px!important}
+.fqx-v145-restaurant-admin .fq-cat-type-chip{border-radius:16px!important;padding:12px!important;display:flex!important;gap:10px!important;align-items:center!important;justify-content:space-between!important}
+.fqx-v145-restaurant-admin .fq-cat-type-chip.is-inactive{opacity:.72!important}
+.fqx-v145-restaurant-admin .fq-svg-icon,.fqx-v145-restaurant-admin svg{color:currentColor!important;fill:currentColor!important;stroke:currentColor!important;opacity:1!important}
+
+/* Admin shell responsive for Restaurant Admin + Super Admin */
+.fqx-v145-restaurant-admin .app-shell.dashboard-shell,
+.fqx-v115-super.app-shell.dashboard-shell{max-width:100vw!important;overflow-x:hidden!important}
+.fqx-v145-restaurant-admin .main-content,
+.fqx-v115-super .main-content{min-width:0!important;width:100%!important;overflow-x:hidden!important}
+.fqx-v145-restaurant-admin .page-body,
+.fqx-v115-super .page-body{max-width:100%!important;overflow-x:hidden!important}
+.fqx-v145-restaurant-admin .topbar,
+.fqx-v115-super .topbar{display:flex!important;align-items:center!important;gap:12px!important;min-width:0!important}
+.fqx-v145-restaurant-admin .mq-sidebar-toggle,
+.fqx-v115-super .mq-sidebar-toggle{display:none!important;align-items:center!important;justify-content:center!important;min-width:42px!important;width:42px!important;height:42px!important;border-radius:12px!important;border:1px solid rgba(249,115,22,.35)!important;background:rgba(249,115,22,.12)!important;color:#fff!important;font-size:20px!important;font-weight:900!important;cursor:pointer!important;z-index:151!important}
+.fqx-v115-super .mq-sidebar-toggle{color:#111827!important;background:#fff7ed!important;border-color:#fed7aa!important}
+.fqx-v115-super .topbar-title{color:#111827!important;min-width:0!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}
+.fqx-v115-super .topbar-name{color:#334155!important}
+.fqx-v115-super .sidebar,.fqx-v115-super .sidebar *{color:#fff!important}
+.fqx-v115-super .nav-item.active{color:#111827!important}
+.fqx-v115-super .card,.fqx-v115-super .chart-card,.fqx-v115-super .section-card,.fqx-v115-super .table-wrap{max-width:100%!important}
+.fqx-v115-super .data-table{min-width:760px!important}
+.fqx-v115-super .table-scroll{overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}
+.fqx-v115-super .form-input,.fqx-v115-super .form-select,.fqx-v115-super .form-textarea,.fqx-v115-super input:not([type=checkbox]):not([type=radio]):not([type=color]),.fqx-v115-super select,.fqx-v115-super textarea{max-width:100%!important;color:#111827!important;background:#fff!important;border-color:#dbe4ee!important}
+.fqx-v115-super .btn,.fqx-v145-restaurant-admin .btn{max-width:100%;white-space:normal!important}
+
+@media (max-width:1180px){
+  .fqx-v145-restaurant-admin .app-shell.dashboard-shell,
+  .fqx-v115-super.app-shell.dashboard-shell{display:block!important;padding:0!important;min-height:100vh!important}
+  .fqx-v145-restaurant-admin .mq-sidebar-toggle,
+  .fqx-v115-super .mq-sidebar-toggle{display:inline-flex!important}
+  .fqx-v145-restaurant-admin .sidebar,
+  .fqx-v115-super .sidebar{position:fixed!important;top:0!important;left:0!important;width:min(86vw,310px)!important;height:100vh!important;max-height:100vh!important;overflow-y:auto!important;z-index:150!important;transform:translateX(-106%)!important;transition:transform .25s ease!important;border-radius:0 22px 22px 0!important;box-shadow:24px 0 80px rgba(0,0,0,.45)!important}
+  .fqx-v145-restaurant-admin.fqx-sidebar-open .sidebar,
+  body.fqx-sidebar-open .fqx-v145-restaurant-admin .sidebar,
+  .fqx-v145-restaurant-admin.sidebar-open .sidebar,
+  body.sidebar-open .fqx-v145-restaurant-admin .sidebar,
+  .fqx-v115-super.fqx-sidebar-open .sidebar,
+  body.fqx-sidebar-open .fqx-v115-super .sidebar,
+  .fqx-v115-super.sidebar-open .sidebar,
+  body.sidebar-open .fqx-v115-super .sidebar{transform:translateX(0)!important}
+  .fqx-v145-restaurant-admin .mq-sidebar-overlay,
+  .fqx-v115-super .mq-sidebar-overlay{position:fixed!important;inset:0!important;background:rgba(2,6,23,.72)!important;z-index:140!important;display:none!important;backdrop-filter:blur(2px)!important}
+  .fqx-v145-restaurant-admin.fqx-sidebar-open .mq-sidebar-overlay,
+  body.fqx-sidebar-open .fqx-v145-restaurant-admin .mq-sidebar-overlay,
+  .fqx-v145-restaurant-admin.sidebar-open .mq-sidebar-overlay,
+  body.sidebar-open .fqx-v145-restaurant-admin .mq-sidebar-overlay,
+  .fqx-v115-super.fqx-sidebar-open .mq-sidebar-overlay,
+  body.fqx-sidebar-open .fqx-v115-super .mq-sidebar-overlay,
+  .fqx-v115-super.sidebar-open .mq-sidebar-overlay,
+  body.sidebar-open .fqx-v115-super .mq-sidebar-overlay{display:block!important}
+  .fqx-v145-restaurant-admin .page-body,
+  .fqx-v115-super .page-body{padding:16px!important}
+  .fqx-v145-restaurant-admin .chart-grid,
+  .fqx-v145-restaurant-admin .form-row,
+  .fqx-v115-super .chart-grid,
+  .fqx-v115-super .form-row{grid-template-columns:1fr!important}
+}
+@media (max-width:900px){
+  .fqx-v145-restaurant-admin .fq-cat-layout{grid-template-columns:1fr!important}
+  .fqx-v145-restaurant-admin .fq-cat-list-card{grid-column:auto!important}
+  .fqx-v145-restaurant-admin .fq-cat-stats{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .fqx-v145-restaurant-admin .fq-cat-titlebar{display:grid!important;grid-template-columns:1fr!important}
+  .fqx-v145-restaurant-admin .fq-cat-add-btn{width:100%!important}
+  .fqx-v115-super .stat-grid,.fqx-v145-restaurant-admin .stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media (max-width:560px){
+  .fqx-v145-restaurant-admin .page-body,
+  .fqx-v115-super .page-body{padding:10px!important}
+  .fqx-v145-restaurant-admin .topbar,
+  .fqx-v115-super .topbar{min-height:58px!important;padding:8px 10px!important;gap:8px!important}
+  .fqx-v145-restaurant-admin .topbar-title,
+  .fqx-v115-super .topbar-title{font-size:14px!important;min-width:0!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}
+  .fqx-v145-restaurant-admin .topbar-right,
+  .fqx-v115-super .topbar-right{gap:6px!important;min-width:0!important}
+  .fqx-v145-restaurant-admin .topbar-name,
+  .fqx-v115-super .topbar-name{display:none!important}
+  .fqx-v145-restaurant-admin .stat-grid,
+  .fqx-v115-super .stat-grid,
+  .fqx-v145-restaurant-admin .fq-cat-stats{grid-template-columns:1fr!important}
+  .fqx-v145-restaurant-admin .fq-cat-card,
+  .fqx-v145-restaurant-admin .fq-cat-stat-card{border-radius:18px!important;padding:14px!important}
+  .fqx-v145-restaurant-admin .fq-cat-save-btn,
+  .fqx-v145-restaurant-admin .fq-cat-add-btn,
+  .fqx-v145-restaurant-admin .fq-cat-card-head a,
+  .fqx-v145-restaurant-admin .fq-cat-actions a,
+  .fqx-v145-restaurant-admin .fq-cat-actions button{width:100%!important;min-height:46px!important}
+  .fqx-v145-restaurant-admin .fq-cat-type-chip{display:grid!important;grid-template-columns:1fr!important}
+  .fqx-v145-restaurant-admin .fq-cat-actions.compact{display:grid!important;grid-template-columns:1fr!important;width:100%!important}
+  .fqx-v145-restaurant-admin .data-table,
+  .fqx-v145-restaurant-admin .fq-cat-table,
+  .fqx-v115-super .data-table{min-width:680px!important}
+}

@@ -1,0 +1,296 @@
+
+/* FluuexQR v101 - Foodwala style customer menu UI only */
+:root{--fq-menu-primary:#ff4b16;--fq-menu-primary2:#ff6a2a;--fq-menu-dark:#111322;--fq-menu-text:#171827;--fq-menu-muted:#73788a;--fq-menu-bg:#f6f7fb;--fq-menu-card:#fff;--fq-menu-line:#e8ebf2;--fq-menu-green:#13b981;--fq-menu-red:#ef4444;--fq-menu-shadow:0 10px 30px rgba(18,20,34,.08);--fq-menu-soft:0 6px 18px rgba(255,75,22,.18)}
+body.menuqr-public-menu-page{background:var(--fq-menu-bg)!important;color:var(--fq-menu-text);padding-bottom:92px;overflow-x:hidden}.site-main-customer-menu{max-width:none!important;margin:0!important;padding:0!important;background:var(--fq-menu-bg)}
+.menuqr-foodwala-ui{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--fq-menu-bg);min-height:100vh;color:var(--fq-menu-text)}
+.menuqr-foodwala-ui *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}.menuqr-foodwala-ui button{font-family:inherit;border:0;cursor:pointer}.menuqr-foodwala-ui .view{max-width:860px;margin:auto;padding:0 14px 8px}.menuqr-foodwala-ui .menuqr-menu-topbar{position:sticky;top:0;z-index:50;background:rgba(246,247,251,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(232,235,242,.86);margin:0 -14px}.menuqr-foodwala-ui .menuqr-menu-topbar-shell{max-width:860px;margin:auto;padding:12px 14px;display:flex;align-items:center;gap:12px;justify-content:space-between}.menuqr-foodwala-ui .menuqr-topbar-brand{display:flex;align-items:center;gap:12px;min-width:0;flex:1}.menuqr-foodwala-ui .menu-restaurant-logo{width:52px!important;height:52px!important;min-width:52px;border-radius:16px;background:#111322;color:#fff;display:grid;place-items:center;font:800 27px Georgia;border:3px solid #242942;overflow:hidden;box-shadow:none}.menuqr-foodwala-ui .menu-restaurant-logo img{width:100%;height:100%;object-fit:cover}.menuqr-foodwala-ui .menu-restaurant-logo span{color:#fff}.menuqr-foodwala-ui .menuqr-topbar-copy{min-width:0;flex:1}.menuqr-foodwala-ui .menu-rest-name{font-size:17px!important;font-weight:800!important;color:var(--fq-menu-text)!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.15}.menuqr-foodwala-ui .menu-rest-subtitle{font-size:12px;color:var(--fq-menu-muted);margin-top:2px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.menuqr-foodwala-ui .menu-table{display:inline-flex!important;align-items:center;gap:6px;background:#ecfdf5!important;color:#087957!important;border:1px solid #bbf7d0!important;border-radius:999px!important;padding:7px 10px!important;font-size:13px!important;font-weight:800!important;margin-top:6px!important;line-height:1}.menuqr-foodwala-ui .menu-table:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--fq-menu-green);display:inline-block}.menuqr-foodwala-ui .menuqr-topbar-header-actions{display:flex;gap:6px;align-items:center;flex:none}.menuqr-foodwala-ui .menuqr-header-icon{width:44px;height:44px;border-radius:14px;background:#fff;border:1px solid var(--fq-menu-line);display:grid;place-items:center;font-size:19px;position:relative;box-shadow:0 5px 14px rgba(18,20,34,.04);color:var(--fq-menu-text);text-decoration:none}.menuqr-foodwala-ui .menuqr-header-icon:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(18,20,34,.08)}.menuqr-foodwala-ui .menuqr-header-badge{position:absolute;top:-7px;right:-6px;background:var(--fq-menu-primary);color:#fff;border:2px solid #fff;border-radius:999px;min-width:21px;height:21px;display:grid;place-items:center;font-size:11px;font-weight:800;line-height:1}.menuqr-foodwala-ui .menuqr-food-tools{padding:14px 0 12px}.menuqr-foodwala-ui .cat-strip{display:flex;gap:9px;overflow:auto;scrollbar-width:none;margin-bottom:12px}.menuqr-foodwala-ui .cat-strip::-webkit-scrollbar{display:none}.menuqr-foodwala-ui .cat-pill{flex:none;border:1px solid var(--fq-menu-line);background:#fff;border-radius:999px;padding:10px 14px;font-size:14px;font-weight:800;color:#4b5164;display:inline-flex;gap:6px;align-items:center;box-shadow:none;white-space:nowrap}.menuqr-foodwala-ui .cat-pill b{font-size:12px;background:#f2f4f8;color:#6b7280;border-radius:999px;padding:2px 6px}.menuqr-foodwala-ui .cat-pill.active{background:linear-gradient(135deg,var(--fq-menu-primary),var(--fq-menu-primary2));color:#fff;border-color:transparent;box-shadow:var(--fq-menu-soft)}.menuqr-foodwala-ui .cat-pill.active b{background:rgba(255,255,255,.22);color:#fff}.menuqr-foodwala-ui .m-menu-tools{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--fq-menu-line);border-radius:18px;padding:13px 14px;box-shadow:var(--fq-menu-shadow);margin-bottom:14px}.menuqr-foodwala-ui .m-search-wrap{display:flex;align-items:center;gap:10px;flex:1;min-width:0}.menuqr-foodwala-ui .m-search-wrap span{font-size:20px}.menuqr-foodwala-ui .m-search-wrap input{border:0!important;outline:0!important;background:transparent!important;width:100%;font-size:15px;color:var(--fq-menu-text);box-shadow:none!important;padding:0!important}.menuqr-foodwala-ui .m-clear-filter{background:transparent;color:var(--fq-menu-primary);font-size:22px;width:30px;min-width:30px;height:30px;overflow:hidden;text-indent:-999px;position:relative}.menuqr-foodwala-ui .m-clear-filter:after{content:"☷";text-indent:0;position:absolute;inset:0;display:grid;place-items:center}.menuqr-foodwala-ui .menuqr-menu-content{padding-bottom:8px}.menuqr-foodwala-ui .menu-grid{display:grid!important;grid-template-columns:1fr;gap:12px}.menuqr-foodwala-ui .m-menu-section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;padding:10px 0 1px;grid-column:1/-1}.menuqr-foodwala-ui .m-menu-section-head span{display:block;color:var(--fq-menu-primary);font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.menuqr-foodwala-ui .m-menu-section-head h2{font-size:24px!important;line-height:1.1;margin:3px 0 0!important;color:var(--fq-menu-text)!important}.menuqr-foodwala-ui .m-menu-section-head strong{background:#fff;border:1px solid var(--fq-menu-line);border-radius:999px;padding:8px 13px;color:#5f6576;font-size:13px;font-weight:800;box-shadow:0 6px 14px rgba(18,20,34,.04);white-space:nowrap}.menuqr-foodwala-ui .menu-card{background:#fff;border:1px solid var(--fq-menu-line);border-radius:22px;padding:12px;display:grid!important;grid-template-columns:86px 1fr;gap:12px;box-shadow:var(--fq-menu-shadow);min-height:0;overflow:hidden}.menuqr-foodwala-ui .menu-card-media{width:86px;height:86px;border-radius:18px;background:linear-gradient(135deg,#fff3e7,#fff9ef);display:grid;place-items:center;font-size:34px;overflow:hidden;border:1px solid #f2e8dd;position:relative}.menuqr-foodwala-ui .menu-card-img{width:100%;height:100%;object-fit:cover}.menuqr-foodwala-ui .menu-card-emoji{font-size:34px}.menuqr-foodwala-ui .m-featured{position:absolute;left:6px;top:6px;font-size:10px;font-weight:900;background:var(--fq-menu-primary);color:#fff;border-radius:999px;padding:4px 6px}.menuqr-foodwala-ui .menu-card-body{min-width:0;display:block}.menuqr-foodwala-ui .menu-card-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}.menuqr-foodwala-ui .m-menu-tags{display:flex;gap:6px;flex-wrap:wrap;min-width:0}.menuqr-foodwala-ui .m-category-label,.menuqr-foodwala-ui .m-food-type{font-size:11px!important;font-weight:800!important;padding:5px 8px!important;border-radius:999px!important;line-height:1!important;display:inline-flex;align-items:center;gap:3px}.menuqr-foodwala-ui .m-category-label{background:#f2f4f8;color:var(--fq-menu-primary)}.menuqr-foodwala-ui .m-food-type.is-veg{background:#ecfdf5;color:#047857}.menuqr-foodwala-ui .m-food-type.is-nonveg{background:#fff1f2;color:#be123c}.menuqr-foodwala-ui .m-food-type.is-egg{background:#fff7ed;color:#c2410c}.menuqr-foodwala-ui .menu-card-price{font-size:17px!important;font-weight:900!important;color:#e63d62!important;white-space:nowrap;line-height:1.1}.menuqr-foodwala-ui .menu-card-name{font-size:17px!important;font-weight:850!important;margin:8px 0 4px!important;line-height:1.2!important;color:var(--fq-menu-text)!important}.menuqr-foodwala-ui .menu-card-desc{font-size:13px!important;color:var(--fq-menu-muted)!important;line-height:1.35!important;margin-bottom:11px!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:18px}.menuqr-foodwala-ui .m-mini-tags{display:flex;gap:5px;flex-wrap:wrap;margin:-2px 0 9px}.menuqr-foodwala-ui .m-mini-tags span{font-size:10px;background:#f8fafc;border:1px solid var(--fq-menu-line);border-radius:999px;padding:4px 7px;color:#6b7280}.menuqr-foodwala-ui .menu-card-footer{margin-top:0}.menuqr-foodwala-ui .add-btn,.menuqr-foodwala-ui .qty-ctrl{height:40px;border-radius:14px;background:linear-gradient(135deg,var(--fq-menu-primary),var(--fq-menu-primary2));color:#fff;font-weight:900;width:100%;box-shadow:var(--fq-menu-soft);display:flex;align-items:center;justify-content:center}.menuqr-foodwala-ui .qty-ctrl{gap:24px}.menuqr-foodwala-ui .qty-btn{width:28px!important;height:28px!important;border-radius:50%!important;background:rgba(255,255,255,.22)!important;color:#fff!important;font-size:18px!important;font-weight:900!important;display:grid!important;place-items:center!important;line-height:1!important}.menuqr-foodwala-ui .qty-num{font-size:16px;font-weight:900;color:#fff}.menuqr-foodwala-ui .badge-cancelled{display:inline-flex;width:100%;height:40px;align-items:center;justify-content:center;border-radius:14px;background:#f1f5f9;color:#64748b;font-weight:900}.menuqr-foodwala-ui .menuqr-customer-footer{background:#fff;border:1px solid var(--fq-menu-line);border-radius:22px;margin:18px 0 10px;padding:20px;text-align:center;box-shadow:var(--fq-menu-shadow);display:block}.menuqr-foodwala-ui .menuqr-customer-footer strong{display:block;font-size:20px;margin-bottom:6px;color:var(--fq-menu-text)}.menuqr-foodwala-ui .menuqr-customer-footer>span{display:block;font-size:14px;color:var(--fq-menu-muted);line-height:1.5;font-weight:500}.menuqr-foodwala-ui .menuqr-restaurant-review-card{border-top:1px solid var(--fq-menu-line);margin-top:16px;padding-top:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left}.menuqr-foodwala-ui .menuqr-restaurant-review-card[hidden]{display:none!important}.menuqr-foodwala-ui .menuqr-review-copy{display:flex;gap:10px;align-items:center}.menuqr-foodwala-ui .menuqr-review-copy .star{font-size:22px}.menuqr-foodwala-ui .menuqr-review-copy b{font-size:14px;display:block;margin:0}.menuqr-foodwala-ui .menuqr-review-copy span{display:block;color:var(--fq-menu-muted);font-size:12px}.menuqr-foodwala-ui .menuqr-review-btn{background:var(--fq-menu-primary)!important;color:#fff!important;border-radius:999px;padding:11px 14px!important;font-weight:800!important;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.menuqr-view-cart-bar{position:fixed!important;left:14px!important;right:14px!important;bottom:calc(10px + env(safe-area-inset-bottom))!important;z-index:60!important;max-width:860px!important;margin:auto!important;height:58px!important;border-radius:18px!important;background:linear-gradient(135deg,var(--fq-menu-primary),var(--fq-menu-primary2))!important;box-shadow:0 18px 36px rgba(255,75,22,.28)!important;align-items:center!important;justify-content:space-between!important;color:#fff!important;padding:0 18px!important;font-weight:900!important;border:0!important}.menuqr-view-cart-bar .menuqr-view-cart-copy{font-size:17px}.menuqr-view-cart-bar .menuqr-view-cart-copy:before{content:"🛒 ";}.menuqr-view-cart-bar strong{background:rgba(255,255,255,.18);padding:9px 12px;border-radius:999px;font-size:14px;color:#fff}.menuqr-cart-wrap,.menuqr-checkout-wrap,.menuqr-order-status-wrap{max-width:860px;margin:0 auto;padding:14px;background:var(--fq-menu-bg);min-height:100vh;font-family:Inter,system-ui,sans-serif}.back-bar{position:sticky;top:0;z-index:40;background:rgba(246,247,251,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--fq-menu-line);padding:12px 0;display:flex;align-items:center;gap:10px;justify-content:space-between}.back-btn,.btn.btn-outline{border:1px solid var(--fq-menu-line)!important;background:#fff!important;color:#111322!important;border-radius:999px!important;padding:10px 14px!important;font-weight:800!important}.cart-list,.checkout-body{display:grid;gap:12px;margin-top:14px}.cart-item,.co-section,.section-card,.cart-footer{background:#fff;border:1px solid var(--fq-menu-line);border-radius:22px;padding:14px;box-shadow:var(--fq-menu-shadow)}.cart-item{display:grid;grid-template-columns:48px 1fr auto;gap:10px;align-items:center}.cart-item-img,.cart-item-emoji{width:48px;height:48px;border-radius:14px;background:#fff7ed;display:grid;place-items:center;object-fit:cover}.sum-row{display:flex;justify-content:space-between;gap:12px;padding:8px 0}.sum-total{font-size:18px;font-weight:900;border-top:1px solid var(--fq-menu-line);margin-top:8px;padding-top:12px}.btn.btn-primary,.primary,#menuqr-place-order{background:linear-gradient(135deg,var(--fq-menu-primary),var(--fq-menu-primary2))!important;color:#fff!important;border-radius:999px!important;border:0!important;font-weight:900!important;box-shadow:var(--fq-menu-soft)!important}.btn-full{width:100%}.btn-lg{min-height:48px}.m-empty-menu,.menu-loading-card{background:#fff;border:1px solid var(--fq-menu-line);border-radius:22px;padding:24px;text-align:center;box-shadow:var(--fq-menu-shadow);grid-column:1/-1}.m-empty-icon,.menu-loading-icon{font-size:36px;margin-bottom:8px}.menuqr-bill-history:not([hidden]){display:block;margin-top:12px}.menuqr-bill-history .section-card{box-shadow:var(--fq-menu-shadow)}
+@media(min-width:720px){.menuqr-foodwala-ui .menu-grid{grid-template-columns:1fr 1fr}.menuqr-foodwala-ui .m-menu-section-head{grid-column:1/-1}.menuqr-foodwala-ui .menu-card{grid-template-columns:96px 1fr}.menuqr-foodwala-ui .menu-card-media{width:96px;height:96px}.menuqr-foodwala-ui .menuqr-menu-topbar-shell{padding:16px 14px}.menuqr-foodwala-ui .menu-restaurant-logo{width:60px!important;height:60px!important;min-width:60px}.menuqr-foodwala-ui .menuqr-header-icon{width:48px;height:48px}}
+@media(max-width:390px){.menuqr-foodwala-ui .view{padding:0 10px}.menuqr-foodwala-ui .menuqr-menu-topbar{margin:0 -10px}.menuqr-foodwala-ui .menuqr-menu-topbar-shell{padding-left:10px;padding-right:10px}.menuqr-foodwala-ui .menu-restaurant-logo{width:48px!important;height:48px!important;min-width:48px}.menuqr-foodwala-ui .menuqr-header-icon{width:41px;height:41px}.menuqr-foodwala-ui .menuqr-topbar-header-actions{gap:4px}.menuqr-foodwala-ui .menu-card{grid-template-columns:78px 1fr}.menuqr-foodwala-ui .menu-card-media{width:78px;height:78px}.menuqr-foodwala-ui .menu-card-price{font-size:15px!important}.menuqr-foodwala-ui .menu-card-name{font-size:16px!important}.menuqr-foodwala-ui .m-category-label,.menuqr-foodwala-ui .m-food-type{font-size:10px!important;padding:4px 7px!important}.menuqr-foodwala-ui .menuqr-restaurant-review-card{display:grid}.menuqr-foodwala-ui .menuqr-review-btn{width:100%}.menuqr-view-cart-bar .menuqr-view-cart-copy{font-size:15px}.menuqr-view-cart-bar strong{font-size:12px}.cart-item{grid-template-columns:42px 1fr}.cart-item-price{grid-column:2/-1}}
+
+
+/* FluuexQR v102 - mobile header/page responsiveness + bill view polish */
+html,body{max-width:100%!important;overflow-x:hidden!important}
+body.menuqr-public-menu-page{width:100%!important;margin:0!important}
+.menuqr-public-menu-page #page,.menuqr-public-menu-page .site,.menuqr-public-menu-page .site-content,.site-main-customer-menu{width:100%!important;max-width:100%!important;overflow-x:hidden!important}
+.menuqr-foodwala-ui,.menuqr-foodwala-ui .view,.menuqr-foodwala-ui .menuqr-menu-content,.menuqr-foodwala-ui .menu-grid{width:100%!important;max-width:860px!important;min-width:0!important}
+.menuqr-foodwala-ui .menuqr-menu-topbar-shell,.menuqr-foodwala-ui .menuqr-topbar-brand,.menuqr-foodwala-ui .menuqr-topbar-copy,.menuqr-foodwala-ui .menu-card,.menuqr-foodwala-ui .menu-card-body,.menuqr-foodwala-ui .menu-card-top{min-width:0!important}
+.menuqr-foodwala-ui .menuqr-topbar-header-actions{max-width:46%!important;min-width:auto!important;justify-content:flex-end!important}
+.menuqr-foodwala-ui .menuqr-header-icon{flex:0 0 auto!important;touch-action:manipulation!important}
+.menuqr-foodwala-ui .menu-rest-name,.menuqr-foodwala-ui .menu-rest-subtitle{max-width:100%!important}
+.menuqr-foodwala-ui .menu-table{max-width:100%!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}
+.menuqr-foodwala-ui .m-menu-tools{width:100%!important;min-width:0!important}.menuqr-foodwala-ui .m-search-wrap input{min-width:0!important}.menuqr-foodwala-ui .menu-card-top{flex-wrap:wrap!important}.menuqr-foodwala-ui .menu-card-price{margin-left:auto!important}.menuqr-bill-history .section-card,.menuqr-bill-history .running-bill-card{border-radius:22px!important;overflow:hidden!important}.menuqr-bill-history .mq-actions-center .btn{min-height:44px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;text-align:center!important}
+@media(max-width:540px){
+  body.menuqr-public-menu-page{padding-bottom:88px!important}
+  .menuqr-foodwala-ui .view{padding-left:10px!important;padding-right:10px!important}
+  .menuqr-foodwala-ui .menuqr-menu-topbar{margin-left:-10px!important;margin-right:-10px!important}
+  .menuqr-foodwala-ui .menuqr-menu-topbar-shell{padding:10px!important;gap:8px!important;width:100%!important}
+  .menuqr-foodwala-ui .menuqr-topbar-brand{gap:8px!important;flex:1 1 auto!important;width:auto!important;overflow:hidden!important}
+  .menuqr-foodwala-ui .menu-restaurant-logo{width:44px!important;height:44px!important;min-width:44px!important;border-radius:14px!important;font-size:22px!important;border-width:2px!important}
+  .menuqr-foodwala-ui .menu-rest-name{font-size:15px!important;line-height:1.12!important;letter-spacing:-.02em!important}
+  .menuqr-foodwala-ui .menu-rest-subtitle{font-size:11px!important;line-height:1.2!important;margin-top:1px!important}
+  .menuqr-foodwala-ui .menu-table{font-size:11px!important;padding:6px 8px!important;margin-top:5px!important;max-width:148px!important}
+  .menuqr-foodwala-ui .menu-table:before{width:7px!important;height:7px!important;min-width:7px!important}
+  .menuqr-foodwala-ui .menuqr-topbar-header-actions{gap:4px!important;max-width:none!important;flex:0 0 auto!important}
+  .menuqr-foodwala-ui .menuqr-header-icon{width:36px!important;height:36px!important;border-radius:12px!important;font-size:16px!important;box-shadow:0 3px 10px rgba(18,20,34,.05)!important}
+  .menuqr-foodwala-ui .menuqr-header-badge{min-width:18px!important;height:18px!important;font-size:10px!important;top:-6px!important;right:-5px!important;border-width:2px!important}
+  .menuqr-foodwala-ui .menuqr-food-tools{padding-top:12px!important}
+  .menuqr-foodwala-ui .cat-strip{gap:7px!important;margin-bottom:10px!important}
+  .menuqr-foodwala-ui .cat-pill{padding:8px 11px!important;font-size:12px!important}
+  .menuqr-foodwala-ui .m-menu-tools{padding:11px 12px!important;border-radius:16px!important;margin-bottom:12px!important;gap:7px!important}
+  .menuqr-foodwala-ui .m-clear-filter{padding:8px 10px!important;font-size:12px!important;white-space:nowrap!important}
+  .menuqr-foodwala-ui .m-menu-section-head{padding:8px 0 11px!important;align-items:center!important}
+  .menuqr-foodwala-ui .m-menu-section-head h2{font-size:21px!important}.menuqr-foodwala-ui .m-menu-section-head strong{font-size:12px!important;padding:7px 10px!important}
+  .menuqr-foodwala-ui .menu-grid{gap:10px!important}
+  .menuqr-foodwala-ui .menu-card{grid-template-columns:76px minmax(0,1fr)!important;gap:10px!important;padding:10px!important;border-radius:20px!important;width:100%!important}
+  .menuqr-foodwala-ui .menu-card-media{width:76px!important;height:76px!important;border-radius:16px!important}
+  .menuqr-foodwala-ui .menu-card-emoji{font-size:30px!important}
+  .menuqr-foodwala-ui .menu-card-name{font-size:15px!important;margin-top:7px!important}
+  .menuqr-foodwala-ui .menu-card-desc{font-size:12px!important;margin-bottom:9px!important;-webkit-line-clamp:2!important}
+  .menuqr-foodwala-ui .m-category-label,.menuqr-foodwala-ui .m-food-type{font-size:9.8px!important;padding:4px 6px!important}
+  .menuqr-foodwala-ui .menu-card-price{font-size:15px!important}
+  .menuqr-foodwala-ui .add-btn,.menuqr-foodwala-ui .qty-ctrl{height:38px!important;border-radius:13px!important}
+  .menuqr-view-cart-bar{left:10px!important;right:10px!important;height:54px!important;border-radius:16px!important;padding:0 13px!important}.menuqr-view-cart-bar .menuqr-view-cart-copy{font-size:14px!important}.menuqr-view-cart-bar strong{font-size:12px!important;padding:8px 9px!important}
+}
+@media(max-width:360px){
+  .menuqr-foodwala-ui .menuqr-menu-topbar-shell{gap:6px!important;padding:9px 8px!important}
+  .menuqr-foodwala-ui .menu-restaurant-logo{width:38px!important;height:38px!important;min-width:38px!important;border-radius:12px!important;font-size:19px!important}
+  .menuqr-foodwala-ui .menu-rest-name{font-size:14px!important}.menuqr-foodwala-ui .menu-rest-subtitle{display:none!important}.menuqr-foodwala-ui .menu-table{font-size:10px!important;padding:5px 7px!important;max-width:112px!important}
+  .menuqr-foodwala-ui .menuqr-header-icon{width:32px!important;height:32px!important;border-radius:10px!important;font-size:14px!important}.menuqr-foodwala-ui .menuqr-topbar-header-actions{gap:3px!important}
+  .menuqr-foodwala-ui .menu-card{grid-template-columns:66px minmax(0,1fr)!important;gap:8px!important}.menuqr-foodwala-ui .menu-card-media{width:66px!important;height:66px!important;border-radius:14px!important}.menuqr-foodwala-ui .menu-card-price{font-size:14px!important}.menuqr-foodwala-ui .menu-card-name{font-size:14px!important}.menuqr-foodwala-ui .m-category-label{display:none!important}
+}
+
+
+/* FluuexQR v103 - bill opens separate page + fixed mobile cart bar */
+.menuqr-foodwala-ui{padding-bottom:105px!important;overflow-x:hidden!important}
+.menuqr-view-cart-bar{left:50%!important;right:auto!important;bottom:calc(12px + env(safe-area-inset-bottom))!important;width:min(860px,calc(100vw - 28px))!important;max-width:calc(100vw - 28px)!important;transform:translateX(-50%)!important;margin:0!important;display:none;box-sizing:border-box!important}
+.menuqr-view-cart-bar.show{display:flex!important}
+.menuqr-view-cart-bar .menuqr-view-cart-copy{white-space:nowrap!important;min-width:0!important;overflow:hidden!important;text-overflow:ellipsis!important}
+.menuqr-view-cart-bar strong{white-space:nowrap!important;flex:0 0 auto!important}
+@media(max-width:420px){.menuqr-view-cart-bar{width:calc(100vw - 20px)!important;max-width:calc(100vw - 20px)!important;height:56px!important;padding:0 12px!important;border-radius:18px!important}.menuqr-view-cart-bar .menuqr-view-cart-copy{font-size:14px!important}.menuqr-view-cart-bar strong{font-size:12px!important;padding:8px 10px!important}.menuqr-foodwala-ui{padding-bottom:112px!important}}
+@media(max-width:340px){.menuqr-view-cart-bar{width:calc(100vw - 14px)!important;max-width:calc(100vw - 14px)!important;padding:0 10px!important}.menuqr-view-cart-bar .menuqr-view-cart-copy{font-size:13px!important}.menuqr-view-cart-bar strong{font-size:11px!important;padding:7px 8px!important}}
+
+/* FluuexQR v105 - category text visibility fix */
+.menuqr-foodwala-ui .cat-strip,
+#menuqr-customer-app.menuqr-customer-app-v2 .cat-strip{
+  background:transparent!important;
+  opacity:1!important;
+  visibility:visible!important;
+}
+.menuqr-foodwala-ui .cat-pill,
+.menuqr-foodwala-ui .cat-pill span,
+.menuqr-foodwala-ui .cat-pill:not(.active),
+#menuqr-customer-app.menuqr-customer-app-v2 .cat-pill,
+#menuqr-customer-app.menuqr-customer-app-v2 .cat-pill span,
+#menuqr-customer-app.menuqr-customer-app-v2 .cat-pill:not(.active){
+  color:#374151!important;
+  opacity:1!important;
+  visibility:visible!important;
+  text-shadow:none!important;
+  -webkit-text-fill-color:#374151!important;
+}
+.menuqr-foodwala-ui .cat-pill,
+#menuqr-customer-app.menuqr-customer-app-v2 .cat-pill{
+  background:#ffffff!important;
+  border:1px solid #e8ebf2!important;
+  min-height:38px!important;
+  line-height:1.15!important;
+  white-space:nowrap!important;
+  overflow:visible!important;
+}
+.menuqr-foodwala-ui .cat-pill b,
+#menuqr-customer-app.menuqr-customer-app-v2 .cat-pill b{
+  color:#6b7280!important;
+  background:#f2f4f8!important;
+  opacity:1!important;
+  -webkit-text-fill-color:#6b7280!important;
+}
+.menuqr-foodwala-ui .cat-pill.active,
+#menuqr-customer-app.menuqr-customer-app-v2 .cat-pill.active{
+  color:#ffffff!important;
+  -webkit-text-fill-color:#ffffff!important;
+  background:linear-gradient(135deg,#ff4b16,#ff6a2a)!important;
+  border-color:transparent!important;
+}
+.menuqr-foodwala-ui .cat-pill.active *,
+#menuqr-customer-app.menuqr-customer-app-v2 .cat-pill.active *{
+  color:#ffffff!important;
+  -webkit-text-fill-color:#ffffff!important;
+}
+.menuqr-foodwala-ui .cat-pill.active b,
+#menuqr-customer-app.menuqr-customer-app-v2 .cat-pill.active b{
+  background:rgba(255,255,255,.22)!important;
+}
+.menuqr-foodwala-ui .m-category-label{
+  color:#ff4b16!important;
+  -webkit-text-fill-color:#ff4b16!important;
+  background:#fff3ed!important;
+  opacity:1!important;
+  visibility:visible!important;
+}
+.menuqr-foodwala-ui .m-menu-section-head h2,
+.menuqr-foodwala-ui .m-menu-section-head span,
+.menuqr-foodwala-ui .m-menu-section-head strong{
+  opacity:1!important;
+  visibility:visible!important;
+  text-shadow:none!important;
+}
+@media(max-width:360px){
+  .menuqr-foodwala-ui .m-category-label{display:inline-flex!important;max-width:92px!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;}
+}
+
+/* FluuexQR v106 - menu card mobile overlap fix */
+#menuqr-customer-app.menuqr-foodwala-ui,
+#menuqr-customer-app.menuqr-foodwala-ui *{
+  max-width:100%;
+  box-sizing:border-box;
+}
+#menuqr-customer-app.menuqr-foodwala-ui .menu-grid{
+  width:100%!important;
+  overflow:visible!important;
+}
+#menuqr-customer-app.menuqr-foodwala-ui .menu-card{
+  width:100%!important;
+  max-width:100%!important;
+  display:grid!important;
+  grid-template-columns:88px minmax(0,1fr)!important;
+  column-gap:12px!important;
+  row-gap:10px!important;
+  align-items:start!important;
+  overflow:hidden!important;
+  position:relative!important;
+}
+#menuqr-customer-app.menuqr-foodwala-ui .menu-card-media{
+  grid-column:1!important;
+  grid-row:1!important;
+  width:88px!important;
+  min-width:88px!important;
+  max-width:88px!important;
+  height:88px!important;
+  min-height:88px!important;
+  max-height:88px!important;
+  flex:0 0 88px!important;
+  position:relative!important;
+  z-index:1!important;
+}
+#menuqr-customer-app.menuqr-foodwala-ui .menu-card-img,
+#menuqr-customer-app.menuqr-foodwala-ui .menu-card-media img,
+#menuqr-customer-app.menuqr-foodwala-ui .menu-card-emoji{
+  width:100%!important;
+  height:100%!important;
+  min-width:0!important;
+  max-width:100%!important;
+  object-fit:cover!important;
+  display:block!important;
+  position:relative!important;
+  left:auto!important;
+  right:auto!important;
+  top:auto!important;
+  bottom:auto!important;
+}
+#menuqr-customer-app.menuqr-foodwala-ui .menu-card-body{
+  grid-column:2!important;
+  grid-row:1!important;
+  min-width:0!important;
+  width:100%!important;
+  max-width:100%!important;
+  overflow:visible!important;
+  position:relative!important;
+  z-index:2!important;
+  padding:0!important;
+  margin:0!important;
+  transform:none!important;
+}
+#menuqr-customer-app.menuqr-foodwala-ui .menu-card-top{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto!important;
+  align-items:start!important;
+  gap:8px!important;
+  width:100%!important;
+  min-width:0!important;
+  margin:0 0 7px!important;
+  overflow:visible!important;
+}
+#menuqr-customer-app.menuqr-foodwala-ui .m-menu-tags{
+  min-width:0!important;
+  width:100%!important;
+  display:flex!important;
+  flex-wrap:wrap!important;
+  gap:6px!important;
+  overflow:visible!important;
+}
+#menuqr-customer-app.menuqr-foodwala-ui .m-category-label,
+#menuqr-customer-app.menuqr-foodwala-ui .m-food-type{
+  max-width:100%!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  flex:0 1 auto!important;
+}
+#menuqr-customer-app.menuqr-foodwala-ui .menu-card-price{
+  grid-column:2!important;
+  justify-self:end!important;
+  align-self:start!important;
+  margin:0!important;
+  white-space:nowrap!important;
+  flex:0 0 auto!important;
+  position:relative!important;
+  z-index:3!important;
+}
+#menuqr-customer-app.menuqr-foodwala-ui .menu-card-name,
+#menuqr-customer-app.menuqr-foodwala-ui .menu-card-desc{
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  margin-left:0!important;
+  padding-left:0!important;
+  position:relative!important;
+  z-index:2!important;
+  transform:none!important;
+}
+#menuqr-customer-app.menuqr-foodwala-ui .menu-card-name{
+  white-space:normal!important;
+  overflow:visible!important;
+  text-overflow:clip!important;
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+}
+#menuqr-customer-app.menuqr-foodwala-ui .menu-card-desc{
+  overflow:hidden!important;
+  overflow-wrap:anywhere!important;
+}
+#menuqr-customer-app.menuqr-foodwala-ui .menu-card-footer{
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  margin-top:9px!important;
+  display:block!important;
+  clear:both!important;
+}
+#menuqr-customer-app.menuqr-foodwala-ui .add-btn,
+#menuqr-customer-app.menuqr-foodwala-ui .qty-ctrl{
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+}
+@media(max-width:540px){
+  #menuqr-customer-app.menuqr-foodwala-ui .menu-grid{padding-left:10px!important;padding-right:10px!important;}
+  #menuqr-customer-app.menuqr-foodwala-ui .menu-card{grid-template-columns:82px minmax(0,1fr)!important;gap:10px!important;padding:10px!important;}
+  #menuqr-customer-app.menuqr-foodwala-ui .menu-card-media{width:82px!important;min-width:82px!important;max-width:82px!important;height:82px!important;min-height:82px!important;max-height:82px!important;flex-basis:82px!important;}
+  #menuqr-customer-app.menuqr-foodwala-ui .menu-card-top{gap:6px!important;}
+  #menuqr-customer-app.menuqr-foodwala-ui .menu-card-name{font-size:15px!important;line-height:1.22!important;margin:6px 0 3px!important;}
+  #menuqr-customer-app.menuqr-foodwala-ui .menu-card-desc{font-size:12px!important;line-height:1.35!important;margin-bottom:7px!important;}
+  #menuqr-customer-app.menuqr-foodwala-ui .menu-card-price{font-size:15px!important;}
+}
+@media(max-width:390px){
+  #menuqr-customer-app.menuqr-foodwala-ui .menu-card{grid-template-columns:76px minmax(0,1fr)!important;column-gap:9px!important;row-gap:8px!important;}
+  #menuqr-customer-app.menuqr-foodwala-ui .menu-card-media{width:76px!important;min-width:76px!important;max-width:76px!important;height:76px!important;min-height:76px!important;max-height:76px!important;flex-basis:76px!important;}
+  #menuqr-customer-app.menuqr-foodwala-ui .m-category-label,
+  #menuqr-customer-app.menuqr-foodwala-ui .m-food-type{font-size:9.5px!important;padding:4px 6px!important;}
+  #menuqr-customer-app.menuqr-foodwala-ui .menu-card-price{font-size:14px!important;}
+}
+@media(max-width:340px){
+  #menuqr-customer-app.menuqr-foodwala-ui .menu-card{grid-template-columns:68px minmax(0,1fr)!important;gap:8px!important;padding:9px!important;}
+  #menuqr-customer-app.menuqr-foodwala-ui .menu-card-media{width:68px!important;min-width:68px!important;max-width:68px!important;height:68px!important;min-height:68px!important;max-height:68px!important;}
+  #menuqr-customer-app.menuqr-foodwala-ui .m-category-label{max-width:62px!important;}
+  #menuqr-customer-app.menuqr-foodwala-ui .m-food-type{max-width:70px!important;}
+}

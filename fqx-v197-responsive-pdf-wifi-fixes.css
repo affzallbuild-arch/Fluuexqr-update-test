@@ -1,0 +1,453 @@
+
+/* FluuexQR v197 — final all-device responsive + visibility + button/icon fixes */
+:root{
+  --fx-bg-dark:#07111f;
+  --fx-bg-card:#0f1b2d;
+  --fx-bg-soft:#132236;
+  --fx-bg-light:#ffffff;
+  --fx-text-light:#ffffff;
+  --fx-text-muted:#cbd5e1;
+  --fx-text-dark:#111827;
+  --fx-border-dark:rgba(255,255,255,.14);
+  --fx-border-light:#e5e7eb;
+  --fx-primary:#f97316;
+  --fx-primary-hover:#ea580c;
+  --fx-success:#22c55e;
+  --fx-danger:#ef4444;
+  --fx-warning:#f59e0b;
+  --fx-info:#38bdf8;
+}
+.fqx-v145-restaurant-admin,
+.fqx-v115-super{
+  -webkit-text-size-adjust:100%;
+  overflow-x:hidden!important;
+}
+.fqx-v145-restaurant-admin .main-content,
+.fqx-v115-super .main-content,
+.fqx-v145-restaurant-admin .page-body,
+.fqx-v115-super .page-body{
+  min-width:0!important;
+  max-width:100%!important;
+  overflow-x:hidden!important;
+}
+.fqx-v145-restaurant-admin .section-card,
+.fqx-v145-restaurant-admin .chart-card,
+.fqx-v145-restaurant-admin .card,
+.fqx-v145-restaurant-admin .fq-room-dark-card,
+.fqx-v145-restaurant-admin .fq-room-info-card,
+.fqx-v145-restaurant-admin .fq-action-panel,
+.fqx-v145-restaurant-admin .fq-template-admin-card{
+  max-width:100%!important;
+}
+.fqx-v145-restaurant-admin .btn,
+.fqx-v145-restaurant-admin button,
+.fqx-v145-restaurant-admin .fq-gold-btn,
+.fqx-v145-restaurant-admin .fq-dark-btn,
+.fqx-v145-restaurant-admin .fq-mini-link,
+.fqx-v145-restaurant-admin .icon-btn,
+.fqx-v145-restaurant-admin .fq-action-btn,
+.fqx-v145-restaurant-admin .fq-bill-action,
+.fqx-v115-super .btn,
+.fqx-v115-super button,
+.fqx-v115-super .btn-primary,
+.fqx-v115-super .btn-outline,
+.fqx-v115-super .btn-success,
+.fqx-v115-super .btn-danger,
+.fqx-v115-super .icon-btn{
+  min-height:40px!important;
+  min-width:40px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:8px!important;
+  border-radius:12px!important;
+  line-height:1.2!important;
+  white-space:normal!important;
+  text-align:center!important;
+  touch-action:manipulation!important;
+  -webkit-tap-highlight-color:transparent!important;
+}
+.fqx-v145-restaurant-admin .fq-gold-btn,
+.fqx-v145-restaurant-admin .btn-primary,
+.fqx-v145-restaurant-admin .btn-success,
+.fqx-v115-super .btn-primary,
+.fqx-v115-super .btn-success{
+  background:linear-gradient(135deg,var(--fx-primary),#ffb347)!important;
+  color:#111827!important;
+  border:1px solid rgba(255,255,255,.12)!important;
+  font-weight:900!important;
+}
+.fqx-v145-restaurant-admin .fq-dark-btn,
+.fqx-v145-restaurant-admin .btn-outline,
+.fqx-v115-super .btn-outline{
+  background:rgba(15,27,45,.9)!important;
+  color:var(--fx-text-light)!important;
+  border:1px solid var(--fx-border-dark)!important;
+}
+.fqx-v145-restaurant-admin .fq-dark-btn:hover,
+.fqx-v145-restaurant-admin .btn-outline:hover,
+.fqx-v115-super .btn-outline:hover{
+  border-color:var(--fx-primary)!important;
+  color:#fff!important;
+  background:#17233a!important;
+}
+.fqx-v145-restaurant-admin .inline-actions,
+.fqx-v145-restaurant-admin .fq-actions-row,
+.fqx-v145-restaurant-admin .fq-room-actions-inline,
+.fqx-v145-restaurant-admin .menuqr-qr-builder-actions,
+.fqx-v115-super .inline-actions,
+.fqx-v115-super .fqx-actions-row{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  gap:10px!important;
+  align-items:center!important;
+}
+.fqx-v145-restaurant-admin input,
+.fqx-v145-restaurant-admin select,
+.fqx-v145-restaurant-admin textarea,
+.fqx-v145-restaurant-admin .form-input,
+.fqx-v145-restaurant-admin .form-select,
+.fqx-v145-restaurant-admin .form-textarea,
+.fqx-v115-super input,
+.fqx-v115-super select,
+.fqx-v115-super textarea,
+.fqx-v115-super .form-input,
+.fqx-v115-super .form-select,
+.fqx-v115-super .form-textarea{
+  max-width:100%!important;
+  min-height:42px!important;
+  color:#111827!important;
+  background:#fff!important;
+  border:1px solid #dbe4ee!important;
+}
+.fqx-v145-restaurant-admin textarea,
+.fqx-v115-super textarea{
+  min-height:96px!important;
+}
+.fqx-v145-restaurant-admin input::placeholder,
+.fqx-v145-restaurant-admin textarea::placeholder,
+.fqx-v115-super input::placeholder,
+.fqx-v115-super textarea::placeholder{
+  color:#64748b!important;
+  opacity:1!important;
+}
+
+/* Category management phone/desktop fix */
+.fqx-v145-restaurant-admin .fqx-category-page,
+.fqx-v145-restaurant-admin [data-fqx-category-page],
+.fqx-v145-restaurant-admin .fqx-category-admin{
+  width:100%!important;
+  max-width:100%!important;
+}
+.fqx-v145-restaurant-admin .fqx-category-page .form-row,
+.fqx-v145-restaurant-admin .fqx-category-admin .form-row,
+.fqx-v145-restaurant-admin .categories-admin .form-row,
+.fqx-v145-restaurant-admin [id*="categor"] .form-row{
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr))!important;
+}
+.fqx-v145-restaurant-admin .fqx-category-page .btn,
+.fqx-v145-restaurant-admin .fqx-category-page button,
+.fqx-v145-restaurant-admin .fqx-category-admin .btn,
+.fqx-v145-restaurant-admin .fqx-category-admin button,
+.fqx-v145-restaurant-admin [id*="categor"] button[type="submit"],
+.fqx-v145-restaurant-admin [id*="categor"] .btn-primary{
+  background:linear-gradient(135deg,#f97316,#ffb347)!important;
+  color:#111827!important;
+  font-weight:950!important;
+  border:0!important;
+}
+
+/* QR Template page + room print page */
+.fqx-v145-restaurant-admin .fqx-v189-template-tabs{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  gap:10px!important;
+}
+.fqx-v145-restaurant-admin .fqx-v189-template-tabs a{
+  min-height:42px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:10px 14px!important;
+  white-space:normal!important;
+  color:#fff!important;
+}
+.fqx-v145-restaurant-admin .fq-template-grid,
+.fqx-v145-restaurant-admin .mq-qr-template-grid,
+.fqx-v197-wifi-template-grid{
+  display:grid!important;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr))!important;
+  gap:14px!important;
+  width:100%!important;
+}
+.fqx-v197-wifi-template-card{
+  position:relative;
+  display:flex!important;
+  min-height:210px;
+  padding:16px!important;
+  border-radius:20px!important;
+  border:1px solid rgba(255,255,255,.14)!important;
+  background:linear-gradient(180deg,#111c2e,#0b1424)!important;
+  color:#fff!important;
+  flex-direction:column;
+  gap:8px;
+  cursor:pointer;
+  overflow:hidden;
+}
+.fqx-v197-wifi-template-card input{position:absolute;opacity:.001;pointer-events:none}
+.fqx-v197-wifi-template-card.is-selected{
+  border-color:#f97316!important;
+  box-shadow:0 0 0 2px rgba(249,115,22,.28),0 18px 46px rgba(0,0,0,.28)!important;
+}
+.fqx-v197-wifi-selected{
+  position:absolute;top:10px;right:10px;
+  padding:6px 9px;border-radius:999px;
+  background:rgba(249,115,22,.16);border:1px solid rgba(249,115,22,.45);
+  color:#fed7aa!important;font-weight:900;font-size:12px;
+}
+.fqx-v197-wifi-icon{font-size:34px;margin-top:24px}
+.fqx-v197-wifi-template-card strong{color:#fff!important;font-size:17px}
+.fqx-v197-wifi-template-card small{color:#cbd5e1!important;font-weight:700}
+.fqx-v197-mini-wifi-qr{
+  width:72px;height:72px;border-radius:16px;background:
+  linear-gradient(90deg,#fff 8px,transparent 8px) 0 0/16px 16px,
+  linear-gradient(#fff 8px,transparent 8px) 0 0/16px 16px,#0f172a;
+  border:8px solid #fff;display:block;margin-top:auto;
+}
+.fqx-v197-success-note{
+  margin:12px 0;padding:12px 14px;border-radius:14px;
+  background:rgba(34,197,94,.14);border:1px solid rgba(34,197,94,.35);
+  color:#bbf7d0!important;font-weight:900;
+}
+.fqx-v145-restaurant-admin .fq-room-print-layout{
+  display:grid!important;
+  grid-template-columns:minmax(220px,280px) minmax(0,1fr) minmax(220px,280px)!important;
+  gap:18px!important;
+  align-items:start!important;
+  max-width:100%!important;
+}
+.fqx-v145-restaurant-admin .fq-room-print-left,
+.fqx-v145-restaurant-admin .fq-room-print-right,
+.fqx-v145-restaurant-admin .fq-room-print-center{
+  min-width:0!important;
+  max-width:100%!important;
+}
+.fqx-v145-restaurant-admin .fq-room-info-card,
+.fqx-v145-restaurant-admin .fq-action-panel{
+  background:rgba(15,27,45,.92)!important;
+  border:1px solid rgba(255,255,255,.14)!important;
+  color:#fff!important;
+}
+.fqx-v145-restaurant-admin .fq-room-info-card h3,
+.fqx-v145-restaurant-admin .fq-action-panel h3,
+.fqx-v145-restaurant-admin .fq-room-info-card dt,
+.fqx-v145-restaurant-admin .fq-room-info-card dd,
+.fqx-v145-restaurant-admin .fq-room-info-card li,
+.fqx-v145-restaurant-admin .fq-custom-row span,
+.fqx-v145-restaurant-admin .fq-custom-row b,
+.fqx-v145-restaurant-admin .fq-action-panel dt,
+.fqx-v145-restaurant-admin .fq-action-panel dd{
+  color:#fff!important;
+  opacity:1!important;
+}
+.fqx-v145-restaurant-admin .fq-room-info-card dt,
+.fqx-v145-restaurant-admin .fq-action-panel dt{
+  color:#cbd5e1!important;
+}
+.fqx-v145-restaurant-admin .fq-print-helper{
+  color:#e5e7eb!important;
+  text-align:center!important;
+  font-weight:800!important;
+}
+.fqx-v145-restaurant-admin .fq-qr-card-premium{
+  max-width:100%!important;
+  margin-inline:auto!important;
+}
+.fqx-v145-restaurant-admin .fq-action-panel .fq-dark-btn,
+.fqx-v145-restaurant-admin .fq-action-panel .fq-gold-btn{
+  width:100%!important;
+  justify-content:center!important;
+}
+
+/* Super Admin responsive action buttons */
+.fqx-v115-super .topbar{
+  min-height:62px!important;
+  gap:10px!important;
+  flex-wrap:wrap!important;
+}
+.fqx-v115-super .topbar-title,
+.fqx-v115-super .topbar-name{
+  min-width:0!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+}
+.fqx-v115-super .section-card,
+.fqx-v115-super .chart-card,
+.fqx-v115-super .table-wrap{
+  max-width:100%!important;
+  overflow:hidden!important;
+}
+.fqx-v115-super .data-table{
+  min-width:720px!important;
+}
+.fqx-v115-super .inline-actions select,
+.fqx-v115-super .inline-actions input{
+  min-width:145px!important;
+}
+.fqx-v115-super .inline-actions .btn,
+.fqx-v115-super .fqx-actions-row .btn{
+  flex:0 1 auto!important;
+}
+
+/* Bill download PDF button reliability */
+.fq-thermal-actions .fq-pos-btn,
+#fqDownloadPdfBtn{
+  cursor:pointer!important;
+  min-height:42px!important;
+  border-radius:12px!important;
+}
+
+/* Phone / tablet hard responsive */
+@media (max-width:1024px){
+  .fqx-v145-restaurant-admin .fq-room-print-layout{
+    grid-template-columns:1fr!important;
+  }
+  .fqx-v145-restaurant-admin .fq-room-print-left{order:1}
+  .fqx-v145-restaurant-admin .fq-room-print-center{order:2}
+  .fqx-v145-restaurant-admin .fq-room-print-right{order:3}
+  .fqx-v145-restaurant-admin .menuqr-qr-builder{
+    grid-template-columns:1fr!important;
+  }
+  .fqx-v145-restaurant-admin .menuqr-qr-builder-actions,
+  .fqx-v145-restaurant-admin .fq-room-actions-inline,
+  .fqx-v197-wifi-actions{
+    display:grid!important;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr))!important;
+    width:100%!important;
+  }
+  .fqx-v145-restaurant-admin .menuqr-qr-builder-actions .btn,
+  .fqx-v145-restaurant-admin .fq-room-actions-inline .btn,
+  .fqx-v145-restaurant-admin .fq-room-actions-inline a,
+  .fqx-v145-restaurant-admin .fq-room-actions-inline button,
+  .fqx-v197-wifi-actions a,
+  .fqx-v197-wifi-actions button{
+    width:100%!important;
+  }
+}
+@media (max-width:768px){
+  .fqx-v145-restaurant-admin .page-body,
+  .fqx-v115-super .page-body{
+    padding:14px 10px 24px!important;
+  }
+  .fqx-v145-restaurant-admin .topbar,
+  .fqx-v115-super .topbar{
+    padding:10px!important;
+    min-height:58px!important;
+  }
+  .fqx-v145-restaurant-admin .stat-grid,
+  .fqx-v115-super .stat-grid,
+  .fqx-v145-restaurant-admin .chart-grid,
+  .fqx-v115-super .chart-grid,
+  .fqx-v145-restaurant-admin .form-row,
+  .fqx-v115-super .form-row{
+    grid-template-columns:1fr!important;
+  }
+  .fqx-v145-restaurant-admin .btn,
+  .fqx-v145-restaurant-admin button,
+  .fqx-v145-restaurant-admin .fq-dark-btn,
+  .fqx-v145-restaurant-admin .fq-gold-btn,
+  .fqx-v115-super .btn,
+  .fqx-v115-super button{
+    min-height:44px!important;
+    font-size:14px!important;
+  }
+  .fqx-v145-restaurant-admin .inline-actions,
+  .fqx-v145-restaurant-admin .fq-actions-row,
+  .fqx-v115-super .inline-actions,
+  .fqx-v115-super .fqx-actions-row{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    width:100%!important;
+  }
+  .fqx-v145-restaurant-admin .inline-actions > *,
+  .fqx-v145-restaurant-admin .fq-actions-row > *,
+  .fqx-v115-super .inline-actions > *,
+  .fqx-v115-super .fqx-actions-row > *{
+    width:100%!important;
+    min-width:0!important;
+  }
+  .fqx-v145-restaurant-admin .fq-template-grid,
+  .fqx-v145-restaurant-admin .mq-qr-template-grid,
+  .fqx-v197-wifi-template-grid{
+    grid-template-columns:1fr!important;
+  }
+  .fqx-v145-restaurant-admin .fqx-v189-template-tabs{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+  }
+  .fqx-v145-restaurant-admin .fqx-v189-template-tabs a{
+    width:100%!important;
+  }
+  .fqx-v145-restaurant-admin .fq-qr-card-premium{
+    transform:none!important;
+    width:100%!important;
+    min-width:0!important;
+  }
+  .fqx-v115-super .data-table,
+  .fqx-v145-restaurant-admin .data-table{
+    min-width:680px!important;
+  }
+  .fqx-v115-super .table-scroll,
+  .fqx-v145-restaurant-admin .table-scroll{
+    overflow-x:auto!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+}
+@media (max-width:480px){
+  .fqx-v145-restaurant-admin .page-body,
+  .fqx-v115-super .page-body{
+    padding-left:8px!important;
+    padding-right:8px!important;
+  }
+  .fqx-v145-restaurant-admin .section-card,
+  .fqx-v145-restaurant-admin .chart-card,
+  .fqx-v145-restaurant-admin .card,
+  .fqx-v145-restaurant-admin .fq-room-dark-card,
+  .fqx-v145-restaurant-admin .fq-room-info-card,
+  .fqx-v145-restaurant-admin .fq-action-panel,
+  .fqx-v115-super .section-card,
+  .fqx-v115-super .chart-card,
+  .fqx-v115-super .card{
+    border-radius:16px!important;
+    padding:14px!important;
+  }
+  .fqx-v145-restaurant-admin .fq-card-title-row,
+  .fqx-v145-restaurant-admin .fq-room-card-head{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:10px!important;
+  }
+  .fqx-v145-restaurant-admin .fq-card-title-row a,
+  .fqx-v145-restaurant-admin .fq-room-card-head a{
+    width:100%!important;
+  }
+  .fqx-v145-restaurant-admin .fq-custom-row{
+    display:grid!important;
+    grid-template-columns:1fr auto!important;
+    gap:8px!important;
+  }
+  .fqx-v145-restaurant-admin .fq-qr-card-premium{
+    padding:14px!important;
+    border-radius:22px!important;
+  }
+  .fqx-v145-restaurant-admin .fq-card-action-icons{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  .fqx-v145-restaurant-admin .fq-card-qr-zone{
+    grid-template-columns:1fr!important;
+  }
+  .fqx-v145-restaurant-admin .fq-pos-btn,
+  .fq-thermal-actions .fq-pos-btn{
+    width:100%!important;
+  }
+}

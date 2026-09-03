@@ -1,0 +1,94 @@
+/* FluuexQR v194 fast/smooth admin patch - no workflow changes */
+body.fqx-v145-restaurant-admin,
+body.fqx-v188-visibility-fix{--fx-bg-dark:#07111f;--fx-bg-card:#0f1b2d;--fx-bg-card-2:#111f34;--fx-bg-light:#ffffff;--fx-text-light:#ffffff;--fx-text-soft:#e5e7eb;--fx-text-muted:#cbd5e1;--fx-text-dark:#111827;--fx-border-dark:rgba(255,255,255,.14);--fx-border-light:#e5e7eb;--fx-primary:#f97316;--fx-success:#22c55e;--fx-danger:#ef4444;--fx-warning:#f59e0b;--fx-info:#38bdf8}
+body.fqx-v145-restaurant-admin .page-body{contain:layout style;background:var(--fx-bg-dark)!important;color:var(--fx-text-light)!important}
+body.fqx-v145-restaurant-admin .section-card,
+body.fqx-v145-restaurant-admin .chart-card,
+body.fqx-v145-restaurant-admin .card,
+body.fqx-v145-restaurant-admin .fq-cat-panel,
+body.fqx-v145-restaurant-admin .fq-cat-list-card,
+body.fqx-v145-restaurant-admin .fq-cat-form-card,
+body.fqx-v145-restaurant-admin .fq-category-wrap,
+body.fqx-v145-restaurant-admin .fq-menu-admin-card{background:linear-gradient(180deg,var(--fx-bg-card),var(--fx-bg-card-2))!important;color:var(--fx-text-light)!important;border:1px solid var(--fx-border-dark)!important;box-shadow:0 16px 42px rgba(0,0,0,.22)!important}
+body.fqx-v145-restaurant-admin .section-card *,
+body.fqx-v145-restaurant-admin .chart-card *,
+body.fqx-v145-restaurant-admin .card *,
+body.fqx-v145-restaurant-admin .fq-cat-panel *,
+body.fqx-v145-restaurant-admin .fq-cat-list-card *,
+body.fqx-v145-restaurant-admin .fq-cat-form-card *{color:inherit}
+body.fqx-v145-restaurant-admin .card-sub,
+body.fqx-v145-restaurant-admin .text-muted,
+body.fqx-v145-restaurant-admin small,
+body.fqx-v145-restaurant-admin .form-label,
+body.fqx-v145-restaurant-admin .fq-cat-muted,
+body.fqx-v145-restaurant-admin .fq-cat-help,
+body.fqx-v145-restaurant-admin .fq-cat-stat-card em{color:var(--fx-text-muted)!important}
+body.fqx-v145-restaurant-admin .form-input,
+body.fqx-v145-restaurant-admin .form-select,
+body.fqx-v145-restaurant-admin .form-textarea,
+body.fqx-v145-restaurant-admin input[type="text"],
+body.fqx-v145-restaurant-admin input[type="number"],
+body.fqx-v145-restaurant-admin input[type="search"],
+body.fqx-v145-restaurant-admin input[type="date"],
+body.fqx-v145-restaurant-admin input[type="datetime-local"],
+body.fqx-v145-restaurant-admin select,
+body.fqx-v145-restaurant-admin textarea{background:#fff!important;color:var(--fx-text-dark)!important;border:1px solid var(--fx-border-light)!important;border-radius:14px!important;box-shadow:none!important;min-height:42px!important}
+body.fqx-v145-restaurant-admin input::placeholder,
+body.fqx-v145-restaurant-admin textarea::placeholder{color:#64748b!important;opacity:1!important}
+body.fqx-v145-restaurant-admin .fq-cat-save-btn,
+body.fqx-v145-restaurant-admin button.fq-cat-save-btn,
+body.fqx-v145-restaurant-admin .btn-primary,
+body.fqx-v145-restaurant-admin button[type="submit"]{background:linear-gradient(135deg,var(--fx-primary),#fb923c)!important;color:#fff!important;border:0!important;text-shadow:0 1px 1px rgba(0,0,0,.22)!important;font-weight:900!important;min-height:42px!important;box-shadow:0 12px 26px rgba(249,115,22,.24)!important}
+body.fqx-v145-restaurant-admin .fq-cat-save-btn * ,
+body.fqx-v145-restaurant-admin .btn-primary * ,
+body.fqx-v145-restaurant-admin button[type="submit"] *{color:#fff!important}
+body.fqx-v145-restaurant-admin .fq-cat-save-btn:hover,
+body.fqx-v145-restaurant-admin .btn-primary:hover,
+body.fqx-v145-restaurant-admin button[type="submit"]:hover{filter:brightness(1.04);transform:translateY(-1px)}
+body.fqx-v145-restaurant-admin .fqx-v194-saving{opacity:.92!important;cursor:progress!important;position:relative}
+body.fqx-v145-restaurant-admin .fqx-v194-highlight{outline:3px solid rgba(249,115,22,.35)!important;transition:outline .2s ease}
+body.fqx-v145-restaurant-admin .data-table{background:transparent!important;color:var(--fx-text-light)!important;border-collapse:separate!important;border-spacing:0!important}
+body.fqx-v145-restaurant-admin .data-table thead th{background:#0b1729!important;color:#f8fafc!important;border-bottom:1px solid var(--fx-border-dark)!important;white-space:nowrap!important}
+body.fqx-v145-restaurant-admin .data-table tbody td{background:#101d31!important;color:#f8fafc!important;border-bottom:1px solid rgba(255,255,255,.08)!important}
+body.fqx-v145-restaurant-admin .data-table tbody tr:hover td{background:#14243c!important}
+body.fqx-v145-restaurant-admin .data-table td a{color:#fdba74!important;font-weight:800!important}
+body.fqx-v145-restaurant-admin .table-wrap,
+body.fqx-v145-restaurant-admin .table-scroll{background:#0f1b2d!important;border:1px solid var(--fx-border-dark)!important;border-radius:18px!important;overflow:auto!important;scrollbar-width:thin}
+body.fqx-v145-restaurant-admin .fq-bills-page,
+body.fqx-v145-restaurant-admin .fq-bills-table-wrap,
+body.fqx-v145-restaurant-admin .fq-bills-list-card,
+body.fqx-v145-restaurant-admin .fq-bills-main-grid{background:#07111f!important;color:#fff!important}
+body.fqx-v145-restaurant-admin .fq-bills-table,
+body.fqx-v145-restaurant-admin .fq-bills-table tbody,
+body.fqx-v145-restaurant-admin .fq-bills-table tr{background:#0f1b2d!important;color:#fff!important}
+body.fqx-v145-restaurant-admin .fq-bills-table th{background:#0b1729!important;color:#f8fafc!important}
+body.fqx-v145-restaurant-admin .fq-bills-table td{background:#101d31!important;color:#f8fafc!important}
+body.fqx-v145-restaurant-admin .fq-bill-actions,
+body.fqx-v145-restaurant-admin .fq-bill-actions form{display:flex!important;align-items:center!important;gap:8px!important;flex-wrap:wrap!important}
+body.fqx-v145-restaurant-admin .fq-bill-actions a,
+body.fqx-v145-restaurant-admin .fq-bill-actions button,
+body.fqx-v145-restaurant-admin .fq-row-action,
+body.fqx-v145-restaurant-admin .icon-btn,
+body.fqx-v145-restaurant-admin .btn-icon{min-width:40px!important;min-height:40px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;border-radius:12px!important;border:1px solid rgba(255,255,255,.16)!important;background:#132238!important;color:#fff!important;box-shadow:0 10px 22px rgba(0,0,0,.2)!important;opacity:1!important;visibility:visible!important;text-decoration:none!important;pointer-events:auto!important}
+body.fqx-v145-restaurant-admin .fq-bill-actions a:hover,
+body.fqx-v145-restaurant-admin .fq-bill-actions button:hover{background:var(--fx-primary)!important;color:#fff!important;border-color:var(--fx-primary)!important;transform:translateY(-1px)}
+body.fqx-v145-restaurant-admin .fq-bill-actions a.is-loading{pointer-events:auto!important;opacity:1!important}
+body.fqx-v145-restaurant-admin .badge,
+body.fqx-v145-restaurant-admin .fqx-status,
+body.fqx-v145-restaurant-admin .fq-status-badge{font-weight:900!important;color:#fff!important;border:1px solid rgba(255,255,255,.18)!important}
+body.fqx-v145-restaurant-admin .badge-pending,
+body.fqx-v145-restaurant-admin .fqx-status-pending{background:#92400e!important;color:#fff!important}
+body.fqx-v145-restaurant-admin .badge-active,
+body.fqx-v145-restaurant-admin .badge-paid,
+body.fqx-v145-restaurant-admin .fqx-status-paid{background:#166534!important;color:#fff!important}
+body.fqx-v145-restaurant-admin .badge-unpaid,
+body.fqx-v145-restaurant-admin .badge-failed,
+body.fqx-v145-restaurant-admin .badge-cancelled{background:#991b1b!important;color:#fff!important}
+body.fqx-v145-restaurant-admin .alert,
+body.fqx-v145-restaurant-admin .notice{border-radius:16px!important;border:1px solid var(--fx-border-dark)!important;color:#fff!important;background:#0f1b2d!important}
+body.fqx-v145-restaurant-admin .alert-success{background:#064e3b!important;color:#ecfdf5!important;border-color:#10b981!important}
+body.fqx-v145-restaurant-admin .alert-warning{background:#78350f!important;color:#fff7ed!important;border-color:#f59e0b!important}
+body.fqx-v145-restaurant-admin .alert-danger{background:#7f1d1d!important;color:#fff!important;border-color:#ef4444!important}
+body.fqx-v145-restaurant-admin .sidebar{will-change:transform;backface-visibility:hidden}
+@media(max-width:1024px){body.fqx-v145-restaurant-admin .app-shell.dashboard-shell{display:block!important;overflow-x:hidden!important}body.fqx-v145-restaurant-admin .page-body{padding:14px!important;max-width:100vw!important;overflow-x:hidden!important}body.fqx-v145-restaurant-admin .stat-grid,body.fqx-v145-restaurant-admin .chart-grid,body.fqx-v145-restaurant-admin .form-row,body.fqx-v145-restaurant-admin .fq-bills-main-grid{grid-template-columns:1fr!important}body.fqx-v145-restaurant-admin .sidebar{position:fixed!important;left:0!important;top:0!important;height:100vh!important;z-index:999!important;transform:translateX(-105%)!important;transition:transform .25s ease!important}body.fqx-v145-restaurant-admin.fqx-sidebar-open .sidebar,body.fqx-v145-restaurant-admin .app-shell.fqx-sidebar-open .sidebar{transform:translateX(0)!important}}
+@media(max-width:640px){body.fqx-v145-restaurant-admin .fq-bill-actions a,body.fqx-v145-restaurant-admin .fq-bill-actions button,body.fqx-v145-restaurant-admin .fq-row-action,body.fqx-v145-restaurant-admin .icon-btn{min-width:42px!important;min-height:42px!important}body.fqx-v145-restaurant-admin .table-wrap,body.fqx-v145-restaurant-admin .table-scroll{width:100%!important;max-width:100vw!important}body.fqx-v145-restaurant-admin .data-table{min-width:720px!important}body.fqx-v145-restaurant-admin .fq-cat-save-btn,body.fqx-v145-restaurant-admin button[type="submit"],body.fqx-v145-restaurant-admin .btn{width:100%;justify-content:center}body.fqx-v145-restaurant-admin .fq-bill-actions .btn,body.fqx-v145-restaurant-admin .fq-bill-actions a,body.fqx-v145-restaurant-admin .fq-bill-actions button{width:auto!important}}
