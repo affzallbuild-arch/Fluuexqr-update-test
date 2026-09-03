@@ -1,0 +1,9 @@
+category,subcategory,item_name,price,veg_nonveg,description,ingredients,image_url,discount_price,is_featured,is_available
+Main Course Veg,Paneer,Paneer Butter Masala,229,veg,Soft paneer cooked in rich creamy tomato gravy,Paneer butter tomato spices,paneer-butter-masala.webp,,1,1
+Biryani,Chicken Biryani,Chicken Biryani,249,nonveg,Aromatic basmati rice cooked with spicy chicken and herbs,Chicken rice spices,chicken-biryani.webp,,1,1
+Chinese,Noodles,Veg Hakka Noodles,159,veg,Stir-fried noodles with mixed vegetables and sauce,Noodles vegetables soy sauce,veg-hakka-noodles.webp,,0,1
+Beverages,Coffee,Cold Coffee,129,veg,Chilled creamy coffee with ice cream and chocolate,Coffee milk ice cream,cold-coffee.webp,,0,1
+,,Dal Tadka,149,,,,,,0,1
+,,Mutton Curry,299,,,,,,1,1
+,,Tomato Soup,99,,,,,,0,1
+,,Gulab Jamun,79,,,,,,0,1
